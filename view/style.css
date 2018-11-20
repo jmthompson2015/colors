@@ -1,0 +1,9 @@
+.cs-bg-gray {
+  background-color: Gray;
+}
+
+#WIDTH_50,
+.filterField,
+.width50 {
+  width: 50px;
+}

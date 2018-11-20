@@ -1,0 +1,44 @@
+{
+  "name": "colors",
+  "version": "1.0.0",
+  "description": "[CSS Named Colors](https://rawgit.com/jmthompson2015/colors/master/src/view/html/CssNamedColors.html)",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmthompson2015/colors.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmthompson2015/colors/issues"
+  },
+  "homepage": "https://github.com/jmthompson2015/colors#readme",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "qunit": "^2.8.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "ramda": "^0.26.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-dom-factories": "^1.0.2",
+    "react-redux": "^5.1.1",
+    "redux": "^4.0.1",
+    "seamless-immutable": "^7.1.4",
+    "tachyons": "^4.11.1"
+  }
+}
