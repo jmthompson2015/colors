@@ -9,6 +9,7 @@ module.exports = {
     QUnit: true,
     R: true,
     React: true,
+    Reactable: true,
     ReactDOM: true,
     ReactDOMFactories: true,
     ReactRedux: true,

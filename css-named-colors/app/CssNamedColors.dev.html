@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>CSS Named Colors</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tachyons@4.11/css/tachyons.min.css">
+	<link rel="stylesheet" href="../view/style.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/ramda@0.25/dist/ramda.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/react@16.6/umd/react.development.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/react-dom@16.6/umd/react-dom.development.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/prop-types@15.6/prop-types.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/react-dom-factories@1.0/index.js"></script>
+	<script src="../../lib/reactable.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/seamless-immutable@7.1/seamless-immutable.development.js"></script>
+
+	<script src="CssNamedColors.js" type="module"></script>
+</head>
+<body>
+	<h1>CSS Named Colors</h1>
+	<label>Color Axis:
+		<select id="axisSelect">
+			<option selected>-none-</option>
+			<optgroup label="Primary">
+				<option value="red">Red</option>
+				<option value="green">Green</option>
+				<option value="blue">Blue</option>
+			</optgroup>
+			<optgroup label="Secondary">
+				<option value="yellow">Yellow</option>
+				<option value="magenta">Magenta</option>
+				<option value="cyan">Cyan</option>
+			</optgroup>
+			<optgroup label="Tertiary">
+				<option value="orange">Orange</option>
+				<option value="rose">Rose</option>
+				<option value="chartreuse">Chartreuse</option>
+				<option value="springGreen">Spring Green</option>
+				<option value="violet">Violet</option>
+				<option value="azure">Azure</option>
+			</optgroup>
+			<optgroup label="Other">
+				<option value="gray">Gray</option>
+			</optgroup>
+		</select>
+	</label>
+	<p />
+	<div id="panel"></div>
+	<p />
+	<span>From the <a href="http://dev.w3.org/csswg/css-color-4/#named-colors">CSS
+			Specification</a></span>
+</body>
+
+</html>
