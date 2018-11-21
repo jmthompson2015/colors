@@ -1,9 +1,7 @@
 # Colors
 
-[Color Scheme](https://jmthompson2015.github.io/colors/color-scheme/app/ColorScheme.html)
-[CSS Named Colors](https://jmthompson2015.github.io/colors/css-named-colors/app/CssNamedColors.html)
-
-## Built With
+- [Color Scheme](https://jmthompson2015.github.io/colors/color-scheme/app/ColorScheme.html)
+- [CSS Named Colors](https://jmthompson2015.github.io/colors/css-named-colors/app/CssNamedColors.html)
 
 ## Built With
 
