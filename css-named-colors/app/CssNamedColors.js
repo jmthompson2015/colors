@@ -2,6 +2,7 @@ import CssNamedColor from "../model/CssNamedColor.js";
 import EnumUtils from "../model/EnumUtilities.js";
 import RGBAxis from "../model/RGBAxis.js";
 
+import AxisSelect from "../view/AxisSelect.js";
 import ColorTable from "../view/ColorTable.js";
 
 let axisKey;
@@ -20,7 +21,7 @@ function createColorTable() {
       },
       element
     ),
-    document.getElementById("panel")
+    document.getElementById("colorPanel")
   );
 }
 
@@ -35,4 +36,5 @@ function axisChange() {
   createColorTable();
 }
 
-document.getElementById("axisSelect").addEventListener("change", axisChange, false);
+const axisSelect = React.createElement(AxisSelect, { onChange: axisChange });
+ReactDOM.render(axisSelect, document.getElementById("selectPanel"));

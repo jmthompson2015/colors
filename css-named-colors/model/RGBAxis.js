@@ -14,92 +14,105 @@ const RGBAxis = {
   BLUE: "blue",
   // Secondary
   YELLOW: "yellow",
-  MAGENTA: "magenta",
   CYAN: "cyan",
+  MAGENTA: "magenta",
   // Tertiary
   ORANGE: "orange",
-  ROSE: "rose",
   CHARTREUSE: "chartreuse",
   SPRING_GREEN: "springGreen",
-  VIOLET: "violet",
   AZURE: "azure",
+  VIOLET: "violet",
+  ROSE: "rose",
   // Other
   GRAY: "gray",
 
   properties: {
     red: {
+      name: "Red",
       r: 1.0,
       g: 0.0,
       b: 0.0,
       key: "red"
     },
     green: {
+      name: "Green",
       r: 0.0,
       g: 1.0,
       b: 0.0,
       key: "green"
     },
     blue: {
+      name: "Blue",
       r: 0.0,
       g: 0.0,
       b: 1.0,
       key: "blue"
     },
     yellow: {
+      name: "Yellow",
       r: 0.7071,
       g: 0.7071,
       b: 0.0,
       key: "yellow"
     },
     magenta: {
+      name: "Magenta",
       r: 0.7071,
       g: 0.0,
       b: 0.7071,
       key: "magenta"
     },
     cyan: {
+      name: "Cyan",
       r: 0.0,
       g: 0.7071,
       b: 0.7071,
       key: "cyan"
     },
     orange: {
+      name: "Orange",
       r: 0.8944,
       g: 0.4472,
       b: 0.0,
       key: "orange"
     },
-    rose: {
-      r: 0.8944,
-      g: 0.0,
-      b: 0.4472,
-      key: "rose"
-    },
     chartreuse: {
+      name: "Chartreuse",
       r: 0.4472,
       g: 0.8944,
       b: 0.0,
       key: "chartreuse"
     },
     springGreen: {
+      name: "Spring Green",
       r: 0.0,
       g: 0.8944,
       b: 0.4472,
       key: "springGreen"
     },
-    violet: {
-      r: 0.4472,
-      g: 0.0,
-      b: 0.8944,
-      key: "violet"
-    },
     azure: {
+      name: "Azure",
       r: 0.0,
       g: 0.4472,
       b: 0.8944,
       key: "azure"
     },
+    violet: {
+      name: "Violet",
+      r: 0.4472,
+      g: 0.0,
+      b: 0.8944,
+      key: "violet"
+    },
+    rose: {
+      name: "Rose",
+      r: 0.8944,
+      g: 0.0,
+      b: 0.4472,
+      key: "rose"
+    },
     gray: {
+      name: "Gray",
       r: 0.5774,
       g: 0.5774,
       b: 0.5774,
