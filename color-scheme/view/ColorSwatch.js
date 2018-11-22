@@ -31,7 +31,7 @@ class ColorSwatch extends React.Component {
         rows.push(ReactUtils.createRow(cell2, "descriptionRow"));
       }
 
-      return ReactUtils.createTable(rows, "colorSwatchTable");
+      return ReactUtils.createTable(rows, "colorSwatchTable", "center mh0");
     }
 
     return swatch;
