@@ -12,13 +12,13 @@ class ColorInput extends React.Component {
 
   handleChangeFunction() {
     const { onChange } = this.props;
-    const r = document.getElementById("inputR").value;
-    const g = document.getElementById("inputG").value;
-    const b = document.getElementById("inputB").value;
+    const h = document.getElementById("inputH").value;
+    const s = document.getElementById("inputS").value;
+    const l = document.getElementById("inputL").value;
     const newColor = Color.create({
-      r: parseInt(r, 10),
-      g: parseInt(g, 10),
-      b: parseInt(b, 10)
+      h: parseInt(h, 10),
+      s: parseInt(s, 10),
+      l: parseInt(l, 10)
     });
 
     onChange(newColor);
@@ -27,22 +27,22 @@ class ColorInput extends React.Component {
   render() {
     const { color } = this.props;
 
-    const inputR = React.createElement(NumberInput, {
-      id: "inputR",
+    const inputH = React.createElement(NumberInput, {
+      id: "inputH",
       onBlur: this.handleChange,
-      initialValue: color.r,
+      initialValue: color.h,
       className: "filterField"
     });
-    const inputG = React.createElement(NumberInput, {
-      id: "inputG",
+    const inputS = React.createElement(NumberInput, {
+      id: "inputS",
       onBlur: this.handleChange,
-      initialValue: color.g,
+      initialValue: color.s,
       className: "filterField"
     });
-    const inputB = React.createElement(NumberInput, {
-      id: "inputB",
+    const inputL = React.createElement(NumberInput, {
+      id: "inputL",
       onBlur: this.handleChange,
-      initialValue: color.b,
+      initialValue: color.l,
       className: "filterField"
     });
     const inputA = React.createElement(NumberInput, {
@@ -53,12 +53,12 @@ class ColorInput extends React.Component {
     });
 
     const cells = [
-      ReactUtils.createCell("R", "labelR", "ph2"),
-      ReactUtils.createCell(inputR, "inputR"),
-      ReactUtils.createCell("G", "labelG", "ph2"),
-      ReactUtils.createCell(inputG, "inputG"),
-      ReactUtils.createCell("B", "labelB", "ph2"),
-      ReactUtils.createCell(inputB, "inputB"),
+      ReactUtils.createCell("H", "labelH", "ph2"),
+      ReactUtils.createCell(inputH, "inputH"),
+      ReactUtils.createCell("S", "labelS", "ph2"),
+      ReactUtils.createCell(inputS, "inputS"),
+      ReactUtils.createCell("L", "labelL", "ph2"),
+      ReactUtils.createCell(inputL, "inputL"),
       ReactUtils.createCell("A", "labelA", "ph2"),
       ReactUtils.createCell(inputA, "inputA")
     ];

@@ -5,28 +5,29 @@ import Reducer from "./Reducer.js";
 
 QUnit.module("Reducer");
 
-const verifyColor = (assert, result, expected, comment = "") => {
-  assert.equal(result.r, expected.r, `${comment} r`);
-  assert.equal(result.g, expected.g, `${comment} g`);
-  assert.equal(result.b, expected.b, `${comment} b`);
+const verifyColor = assert => (result, expected, comment = "") => {
+  assert.equal(result.h, expected.h, `${comment} h`);
+  assert.equal(result.s, expected.s, `${comment} s`);
+  assert.equal(result.l, expected.l, `${comment} l`);
 };
 
 QUnit.test("setColor()", assert => {
   // Setup.
   const state = AppState.create();
-  const color = Color.create({ r: 255, g: 255 });
+  const color = Color.YELLOW;
   const action = ActionCreator.setColor(color);
+  const myVerify = verifyColor(assert);
 
   // Run.
   const result = Reducer.root(state, action);
 
   // Verify.
   assert.ok(result);
-  verifyColor(assert, result.color, color);
-  verifyColor(assert, result.complementary, { r: 0, g: 0, b: 255 }, "complementary");
-  verifyColor(assert, result.analogousLeft, { r: 255, g: 128, b: 0 }, "analogousLeft");
-  verifyColor(assert, result.analogousRight, { r: 128, g: 255, b: 0 }, "analogousRight");
-  verifyColor(assert, result.achromatic, { r: 255, g: 255, b: 255 }, "achromatic");
+  myVerify(result.color, color);
+  myVerify(result.complementary, Color.BLUE, "complementary");
+  myVerify(result.analogousLeft, Color.ORANGE, "analogousLeft");
+  myVerify(result.analogousRight, Color.CHARTREUSE_GREEN, "analogousRight");
+  myVerify(result.achromatic, { h: 60, s: 0, l: 50 }, "achromatic");
 });
 
 const ReducerTest = {};
