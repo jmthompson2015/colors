@@ -6,10 +6,7 @@ import AchromaticPanel from "./AchromaticPanel.js";
 const createAchromaticPanel = color =>
   React.createElement(AchromaticPanel, {
     color,
-    achromatic: ColorUtils.achromatic(color),
-    analogousLeft: ColorUtils.analogousLeft(color),
-    analogousRight: ColorUtils.analogousRight(color),
-    complementary: ColorUtils.complementary(color)
+    achromatic: ColorUtils.achromatic(color)
   });
 
 const color1 = Color.create({ l: 12 });

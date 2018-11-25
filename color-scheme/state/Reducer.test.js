@@ -24,10 +24,12 @@ QUnit.test("setColor()", assert => {
   // Verify.
   assert.ok(result);
   myVerify(result.color, color);
-  myVerify(result.complementary, Color.BLUE, "complementary");
+  myVerify(result.achromatic, { h: 60, s: 0, l: 50 }, "achromatic");
   myVerify(result.analogousLeft, Color.ORANGE, "analogousLeft");
   myVerify(result.analogousRight, Color.CHARTREUSE_GREEN, "analogousRight");
-  myVerify(result.achromatic, { h: 60, s: 0, l: 50 }, "achromatic");
+  myVerify(result.complement, Color.BLUE, "complement");
+  myVerify(result.complementLeft, Color.AZURE, "complementLeft");
+  myVerify(result.complementRight, Color.VIOLET, "complementRight");
 });
 
 const ReducerTest = {};

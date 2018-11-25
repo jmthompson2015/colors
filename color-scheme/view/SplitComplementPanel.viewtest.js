@@ -1,34 +1,37 @@
 import Color from "../state/Color.js";
 import ColorUtils from "../state/ColorUtilities.js";
 
-import ComplementPanel from "./ComplementPanel.js";
+import SplitComplementPanel from "./SplitComplementPanel.js";
 
-const createComplementPanel = color =>
-  React.createElement(ComplementPanel, {
+const createSplitComplementPanel = color => {
+  const complement = ColorUtils.complementary(color);
+  return React.createElement(SplitComplementPanel, {
     color,
-    complement: ColorUtils.complementary(color)
+    complementLeft: ColorUtils.analogousLeft(complement),
+    complementRight: ColorUtils.analogousRight(complement)
   });
+};
 
 const color1 = Color.RED;
-const element1 = createComplementPanel(color1);
+const element1 = createSplitComplementPanel(color1);
 ReactDOM.render(element1, document.getElementById("panel1"));
 
 const color2 = Color.YELLOW;
-const element2 = createComplementPanel(color2);
+const element2 = createSplitComplementPanel(color2);
 ReactDOM.render(element2, document.getElementById("panel2"));
 
 const color3 = Color.GREEN;
-const element3 = createComplementPanel(color3);
+const element3 = createSplitComplementPanel(color3);
 ReactDOM.render(element3, document.getElementById("panel3"));
 
 const color4 = Color.CYAN;
-const element4 = createComplementPanel(color4);
+const element4 = createSplitComplementPanel(color4);
 ReactDOM.render(element4, document.getElementById("panel4"));
 
 const color5 = Color.BLUE;
-const element5 = createComplementPanel(color5);
+const element5 = createSplitComplementPanel(color5);
 ReactDOM.render(element5, document.getElementById("panel5"));
 
 const color6 = Color.MAGENTA;
-const element6 = createComplementPanel(color6);
+const element6 = createSplitComplementPanel(color6);
 ReactDOM.render(element6, document.getElementById("panel6"));

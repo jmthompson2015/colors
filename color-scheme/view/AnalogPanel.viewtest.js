@@ -6,10 +6,8 @@ import AnalogPanel from "./AnalogPanel.js";
 const createAnalogPanel = color =>
   React.createElement(AnalogPanel, {
     color,
-    achromatic: ColorUtils.achromatic(color),
     analogousLeft: ColorUtils.analogousLeft(color),
-    analogousRight: ColorUtils.analogousRight(color),
-    complementary: ColorUtils.complementary(color)
+    analogousRight: ColorUtils.analogousRight(color)
   });
 
 const color1 = Color.RED;

@@ -2,7 +2,7 @@
 
 import ActionType from "./ActionType.js";
 import AppState from "./AppState.js";
-import ColorUtils from "./ColorUtilities.js";
+import CU from "./ColorUtilities.js";
 
 const Reducer = {};
 
@@ -16,21 +16,27 @@ Reducer.root = (state, action) => {
   let newAchromatic;
   let newAnalogousLeft;
   let newAnalogousRight;
-  let newComplementary;
+  let newComplement;
+  let newComplementLeft;
+  let newComplementRight;
 
   switch (action.type) {
     case ActionType.SET_COLOR:
       console.log(`Reducer SET_COLOR ${JSON.stringify(action.color)}`);
-      newComplementary = ColorUtils.complementary(action.color);
-      newAnalogousLeft = ColorUtils.analogousLeft(action.color);
-      newAnalogousRight = ColorUtils.analogousRight(action.color);
-      newAchromatic = ColorUtils.achromatic(action.color);
+      newAchromatic = CU.achromatic(action.color);
+      newAnalogousLeft = CU.analogousLeft(action.color);
+      newAnalogousRight = CU.analogousRight(action.color);
+      newComplement = CU.complementary(action.color);
+      newComplementLeft = CU.analogousLeft(newComplement);
+      newComplementRight = CU.analogousRight(newComplement);
       return R.pipe(
         R.assoc("color", action.color),
-        R.assoc("complementary", newComplementary),
+        R.assoc("achromatic", newAchromatic),
         R.assoc("analogousLeft", newAnalogousLeft),
         R.assoc("analogousRight", newAnalogousRight),
-        R.assoc("achromatic", newAchromatic)
+        R.assoc("complement", newComplement),
+        R.assoc("complementLeft", newComplementLeft),
+        R.assoc("complementRight", newComplementRight)
       )(state);
     default:
       console.warn(`Reducer.root: Unhandled action type: ${action.type}`);
