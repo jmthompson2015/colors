@@ -62,7 +62,7 @@ ColorUtilities.rgbToHsl = (r0, g0, b0) => {
   return { h: Math.round(360 * h), s: Math.round(100 * s), l: Math.round(100 * l) };
 };
 
-ColorUtilities.toString = color => `${color.h}\u00B0, ${color.s}%, ${color.l}%, ${color.a}`;
+ColorUtilities.toString = color => `${color.h}, ${color.s}%, ${color.l}%, ${color.a}`;
 
 ColorUtilities.toStyle = color => `hsla(${color.h}, ${color.s}%, ${color.l}%, ${color.a})`;
 

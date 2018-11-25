@@ -96,7 +96,7 @@ QUnit.test("toString()", assert => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result, "1\u00B0, 2%, 3%, 0.5");
+  assert.equal(result, "1, 2%, 3%, 0.5");
 });
 
 QUnit.test("toStyle()", assert => {
