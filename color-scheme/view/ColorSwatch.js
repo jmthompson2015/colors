@@ -51,13 +51,13 @@ ColorSwatch.propTypes = {
 };
 
 ColorSwatch.defaultProps = {
-  descriptionClass: "tc",
-  height: 40,
+  descriptionClass: "f6 tc",
+  height: 25,
   showTitle: false,
   showDescription: false,
   title: "Color",
-  titleClass: "b tc",
-  width: 64.7212 // height * 1.61803 (golden ratio)
+  titleClass: "b f5 tc",
+  width: 110
 };
 
 export default ColorSwatch;

@@ -17,17 +17,20 @@ const container0 = React.createElement(ColorInputContainer);
 const element0 = React.createElement(ReactRedux.Provider, { store }, container0);
 ReactDOM.render(element0, document.getElementById("inputPanel"));
 
-const container1 = React.createElement(MonochromaticContainer);
+const container1 = React.createElement(MonochromaticContainer, { varySaturation: true });
 const element1 = React.createElement(ReactRedux.Provider, { key: "element1", store }, container1);
 
-const container2 = React.createElement(ComplementContainer);
+const container2 = React.createElement(MonochromaticContainer);
 const element2 = React.createElement(ReactRedux.Provider, { key: "element2", store }, container2);
 
-const container3 = React.createElement(AnalogContainer);
+const container3 = React.createElement(ComplementContainer);
 const element3 = React.createElement(ReactRedux.Provider, { key: "element3", store }, container3);
 
-const container4 = React.createElement(AchromaticContainer);
+const container4 = React.createElement(AnalogContainer);
 const element4 = React.createElement(ReactRedux.Provider, { key: "element4", store }, container4);
 
-const table = ReactUtils.createFlexboxWrap([element1, element2, element3, element4]);
+const container5 = React.createElement(AchromaticContainer);
+const element5 = React.createElement(ReactRedux.Provider, { key: "element5", store }, container5);
+
+const table = ReactUtils.createFlexboxWrap([element1, element2, element3, element4, element5]);
 ReactDOM.render(table, document.getElementById("colorPanel"));

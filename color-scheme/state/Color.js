@@ -1,9 +1,12 @@
+// see https://dev.to/maurobringolf/a-neat-trick-to-compute-modulo-of-negative-numbers-111e
+
 const Color = {};
 
+const mod = (x, n) => ((x % n) + n) % n;
+
 Color.create = ({ name, h = 0, s = 100, l = 50, a = 1.0 } = {}) => {
-  const h1 = h < 0 ? h + 360 : h;
-  const h2 = h1 > 360 ? h1 - 360 : h1;
-  return Immutable({ name, h: h2, s, l, a });
+  const h2 = mod(h, 360);
+  return Immutable({ name, h: Math.round(h2), s: Math.round(s), l: Math.round(l), a });
 };
 
 Color.BLACK = Color.create({ name: "Black", s: 0, l: 0 });
