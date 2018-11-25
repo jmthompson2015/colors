@@ -30,6 +30,8 @@ QUnit.test("setColor()", assert => {
   myVerify(result.complement, Color.BLUE, "complement");
   myVerify(result.complementLeft, Color.AZURE, "complementLeft");
   myVerify(result.complementRight, Color.VIOLET, "complementRight");
+  myVerify(result.triadicLeft, Color.MAGENTA, "triadicLeft");
+  myVerify(result.triadicRight, Color.CYAN, "triadicRight");
 });
 
 const ReducerTest = {};

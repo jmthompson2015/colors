@@ -111,5 +111,31 @@ QUnit.test("toStyle()", assert => {
   assert.equal(result, "hsla(1, 2%, 3%, 0.5)");
 });
 
+QUnit.test("triadicLeft()", assert => {
+  const myVerify = verifyColor(assert);
+  myVerify(CU.triadicLeft(Color.RED), Color.BLUE, "red");
+  myVerify(CU.triadicLeft(Color.GREEN), Color.RED, "green");
+  myVerify(CU.triadicLeft(Color.BLUE), Color.GREEN, "blue");
+
+  myVerify(CU.triadicLeft(Color.YELLOW), Color.MAGENTA, "yellow");
+  myVerify(CU.triadicLeft(Color.CYAN), Color.YELLOW, "cyan");
+  myVerify(CU.triadicLeft(Color.MAGENTA), Color.CYAN, "magenta");
+
+  myVerify(CU.triadicLeft(Color.create({ s: 50 })), { h: 240, s: 50, l: 50 }, "medium red");
+});
+
+QUnit.test("triadicRight()", assert => {
+  const myVerify = verifyColor(assert);
+  myVerify(CU.triadicRight(Color.RED), Color.GREEN, "red");
+  myVerify(CU.triadicRight(Color.GREEN), Color.BLUE, "green");
+  myVerify(CU.triadicRight(Color.BLUE), Color.RED, "blue");
+
+  myVerify(CU.triadicRight(Color.YELLOW), Color.CYAN, "yellow");
+  myVerify(CU.triadicRight(Color.CYAN), Color.MAGENTA, "cyan");
+  myVerify(CU.triadicRight(Color.MAGENTA), Color.YELLOW, "magenta");
+
+  myVerify(CU.triadicRight(Color.create({ s: 50 })), { h: 120, s: 50, l: 50 }, "medium red");
+});
+
 const ColorUtilitiesTest = {};
 export default ColorUtilitiesTest;

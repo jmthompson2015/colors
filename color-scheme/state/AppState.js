@@ -7,7 +7,9 @@ AppState.create = ({
   analogousRight,
   complement,
   complementLeft,
-  complementRight
+  complementRight,
+  triadicLeft,
+  triadicRight
 } = {}) =>
   Immutable({
     color,
@@ -16,7 +18,9 @@ AppState.create = ({
     analogousRight,
     complement,
     complementLeft,
-    complementRight
+    complementRight,
+    triadicLeft,
+    triadicRight
   });
 
 Object.freeze(AppState);

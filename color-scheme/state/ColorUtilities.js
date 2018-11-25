@@ -66,6 +66,10 @@ ColorUtilities.toString = color => `${color.h}\u00B0, ${color.s}%, ${color.l}%, 
 
 ColorUtilities.toStyle = color => `hsla(${color.h}, ${color.s}%, ${color.l}%, ${color.a})`;
 
+ColorUtilities.triadicLeft = color => Color.create({ h: color.h - 120, s: color.s, l: color.l });
+
+ColorUtilities.triadicRight = color => Color.create({ h: color.h + 120, s: color.s, l: color.l });
+
 Object.freeze(ColorUtilities);
 
 export default ColorUtilities;

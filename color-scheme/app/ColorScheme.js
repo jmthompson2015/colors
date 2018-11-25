@@ -10,6 +10,7 @@ import ColorInputContainer from "../container/ColorInputContainer.js";
 import ComplementContainer from "../container/ComplementContainer.js";
 import MonochromaticContainer from "../container/MonochromaticContainer.js";
 import SplitComplementContainer from "../container/SplitComplementContainer.js";
+import TriadicContainer from "../container/TriadicContainer.js";
 
 const store = Redux.createStore(Reducer.root);
 store.dispatch(ActionCreator.setColor(Color.RED));
@@ -30,18 +31,22 @@ const element3 = React.createElement(ReactRedux.Provider, { key: "element3", sto
 const container4 = React.createElement(SplitComplementContainer);
 const element4 = React.createElement(ReactRedux.Provider, { key: "element4", store }, container4);
 
+const container6 = React.createElement(AchromaticContainer);
+const element6 = React.createElement(ReactRedux.Provider, { key: "element6", store }, container6);
+
 const container5 = React.createElement(AnalogContainer);
 const element5 = React.createElement(ReactRedux.Provider, { key: "element5", store }, container5);
 
-const container6 = React.createElement(AchromaticContainer);
-const element6 = React.createElement(ReactRedux.Provider, { key: "element6", store }, container6);
+const container7 = React.createElement(TriadicContainer);
+const element7 = React.createElement(ReactRedux.Provider, { key: "element7", store }, container7);
 
 const table = ReactUtils.createFlexboxWrap([
   element1,
   element2,
   element3,
   element4,
+  element6,
   element5,
-  element6
+  element7
 ]);
 ReactDOM.render(table, document.getElementById("colorPanel"));
