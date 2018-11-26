@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Color Wheel</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tachyons@4.11/css/tachyons.min.css">
+	<link rel="stylesheet" href="../view/style.css">
+
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/ramda@0.25/dist/ramda.min.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/react@16.6/umd/react.production.min.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom@16.6/umd/react-dom.production.min.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/prop-types@15.6/prop-types.min.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom-factories@1.0/index.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/seamless-immutable@7.1/seamless-immutable.production.min.js"></script>
+
+	<script src="ColorWheel.js" type="module"></script>
+</head>
+<body>
+	<h1>Color Wheel</h1>
+	<p>
+		This page displays colors for the <a href="https://en.wikipedia.org/wiki/HSL_and_HSV">HSL color model</a>, which is an <a href="http://en.wikipedia.org/wiki/Additive_color">additive
+			color</a> model.
+	</p>
+	<div>
+		<img src="../resource/RBG_color_wheel.png" width="300" />
+	</div>
+	<h2 class="pl2">Primary Colors</h2>
+	<div id="panel1" class="pa2"></div>
+	<h2 class="pl2">Secondary Colors</h2>
+	<span class="pl2">Formed by the addition of primary colors.</span>
+	<div id="panel2" class="pa2"></div>
+	<h2 class="pl2">Tertiary Colors</h2>
+	<span class="pl2">Formed by the addition of a primary and a secondary color.</span>
+	<div id="panel3" class="pa2"></div>
+</body>
+
+</html>
