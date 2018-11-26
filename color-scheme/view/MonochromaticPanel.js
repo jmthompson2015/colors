@@ -6,10 +6,8 @@ import ReactUtils from "./ReactUtilities.js";
 class MonochromaticPanel extends React.Component {
   render() {
     const { color, varySaturation } = this.props;
-    const myProps = { showDescription: true, title: "Monochromatic" };
     const count = 7 + (varySaturation ? 0 : 1);
     const max = count + (varySaturation ? 1 : 0);
-    let showTitle = true;
     const rows = [];
 
     for (let i = 1; i < max; i += 1) {
@@ -17,16 +15,12 @@ class MonochromaticPanel extends React.Component {
       const l = varySaturation ? color.l : (i * 100) / count;
 
       const myColor = Color.create({ h: color.h, s, l });
-      const swatch = React.createElement(
-        ColorSwatch,
-        R.merge(myProps, { color: myColor, showTitle })
-      );
+      const swatch = React.createElement(ColorSwatch, { color: myColor, showDescription: true });
       const cell = ReactUtils.createCell(swatch, `swatchCell${i}`, "ph2");
       rows.push(ReactUtils.createRow(cell, `row${i}`));
-      showTitle = false;
     }
 
-    return ReactUtils.createTable(rows, "monochromaticPanelTable", "cs-bg-gray ma2 pv2");
+    return ReactUtils.createTable(rows, "monochromaticPanelTable", "center cs-bg-gray mh0 mv2 pv2");
   }
 }
 

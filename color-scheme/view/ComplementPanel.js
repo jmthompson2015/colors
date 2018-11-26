@@ -22,7 +22,11 @@ class ComplementPanel extends React.Component {
     const row0 = ReactUtils.createRow(cell0, "row0");
     const row1 = ReactUtils.createRow(cell1, "row1");
 
-    return ReactUtils.createTable([row0, row1], "complementPanelTable", "cs-bg-gray ma2 pv2");
+    return ReactUtils.createTable(
+      [row0, row1],
+      "complementPanelTable",
+      "center cs-bg-gray mh0 mv2 pv2"
+    );
   }
 }
 

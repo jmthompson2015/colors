@@ -9,3 +9,6 @@ open ${BASE}/ColorSwatch.viewtest.html
 open ${BASE}/ComplementPanel.viewtest.html
 open ${BASE}/MonochromaticPanel.viewtest.html
 open ${BASE}/NumberInput.viewtest.html
+open ${BASE}/SplitComplementPanel.viewtest.html
+open ${BASE}/TitledElement.viewtest.html
+open ${BASE}/TriadicPanel.viewtest.html
