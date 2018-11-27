@@ -14,25 +14,21 @@ Color.GRAY = Color.create({ name: "Gray", s: 0 });
 Color.WHITE = Color.create({ name: "White", s: 0, l: 100 });
 
 Color.RED = Color.create({ name: "Red", h: 0 });
-Color.ORANGE = Color.create({ name: "Orange", h: 30, components: "\u00BD (red + yellow)" });
+Color.ORANGE = Color.create({ name: "Orange", h: 30, components: "red + yellow" });
 Color.YELLOW = Color.create({ name: "Yellow", h: 60, components: "red + green" });
 Color.CHARTREUSE_GREEN = Color.create({
   name: "Chartreuse Green",
   h: 90,
-  components: "\u00BD (yellow + green)"
+  components: "yellow + green"
 });
 Color.GREEN = Color.create({ name: "Green", h: 120 });
-Color.SPRING_GREEN = Color.create({
-  name: "Spring Green",
-  h: 150,
-  components: "\u00BD (green + cyan)"
-});
+Color.SPRING_GREEN = Color.create({ name: "Spring Green", h: 150, components: "green + cyan" });
 Color.CYAN = Color.create({ name: "Cyan", h: 180, components: "green + blue" });
-Color.AZURE = Color.create({ name: "Azure", h: 210, components: "\u00BD (cyan + blue)" });
+Color.AZURE = Color.create({ name: "Azure", h: 210, components: "cyan + blue" });
 Color.BLUE = Color.create({ name: "Blue", h: 240 });
-Color.VIOLET = Color.create({ name: "Violet", h: 270, components: "\u00BD (blue + magenta)" });
+Color.VIOLET = Color.create({ name: "Violet", h: 270, components: "blue + magenta" });
 Color.MAGENTA = Color.create({ name: "Magenta", h: 300, components: "blue + red" });
-Color.ROSE = Color.create({ name: "Rose", h: 330, components: "\u00BD (magenta + red)" });
+Color.ROSE = Color.create({ name: "Rose", h: 330, components: "magenta + red" });
 
 Color.MAROON = Color.create({ name: "Maroon", l: 25, components: "\u00BD red" });
 Color.DARK_GREEN = Color.create({ name: "Dark Green", h: 120, l: 25, components: "\u00BD green" });
