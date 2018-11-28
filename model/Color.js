@@ -13,6 +13,37 @@ Color.create = ({ name, h = 0, s = 100, l = 50 } = {}) => {
 };
 
 // /////////////////////////////////////////////////////////////////////////////////////////////////
+// Color Wheel
+// Color.BLACK = Color.create({ name: "Black", s: 0, l: 0 });
+// Color.GRAY = Color.create({ name: "Gray", s: 0 });
+// Color.WHITE = Color.create({ name: "White", s: 0, l: 100 });
+
+Color.RED = Color.create({ name: "Red", h: 0 });
+Color.ORANGE = Color.create({ name: "Orange", h: 30, components: "red + yellow" });
+Color.YELLOW = Color.create({ name: "Yellow", h: 60, components: "red + green" });
+Color.CHARTREUSE_GREEN = Color.create({
+  name: "Chartreuse Green",
+  h: 90,
+  components: "yellow + green"
+});
+Color.GREEN = Color.create({ name: "Green", h: 120 });
+Color.SPRING_GREEN = Color.create({ name: "Spring Green", h: 150, components: "green + cyan" });
+Color.CYAN = Color.create({ name: "Cyan", h: 180, components: "green + blue" });
+Color.AZURE = Color.create({ name: "Azure", h: 210, components: "cyan + blue" });
+Color.BLUE = Color.create({ name: "Blue", h: 240 });
+Color.VIOLET = Color.create({ name: "Violet", h: 270, components: "blue + magenta" });
+Color.MAGENTA = Color.create({ name: "Magenta", h: 300, components: "blue + red" });
+Color.ROSE = Color.create({ name: "Rose", h: 330, components: "magenta + red" });
+
+Color.MAROON = Color.create({ name: "Maroon", l: 25, components: "\u00BD red" });
+Color.DARK_GREEN = Color.create({ name: "Dark Green", h: 120, l: 25, components: "\u00BD green" });
+Color.NAVY = Color.create({ name: "Navy", h: 240, l: 25, components: "\u00BD blue" });
+
+Color.OLIVE = Color.create({ name: "Olive", h: 60, l: 25, components: "\u00BD (red + green)" });
+Color.TEAL = Color.create({ name: "Teal", h: 180, l: 25, components: "\u00BD (green + blue)" });
+Color.PURPLE = Color.create({ name: "Purple", h: 300, l: 25, components: "\u00BD (blue + red)" });
+
+// /////////////////////////////////////////////////////////////////////////////////////////////////
 // Achromatic Grays
 Color.WHITE = Color.create({ name: "White", s: 0, l: 100 });
 Color.GAINSBORO = Color.create(R.merge(CU.rgbToHsl(220, 220, 220), { name: "Gainsboro" }));

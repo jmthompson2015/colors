@@ -1,0 +1,10 @@
+body {
+  /* background-image: url("./yellowGradient.png");
+  background-repeat: repeat-y; */
+  font-family: "San Francisco", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: medium;
+}
+
+.cw-bg-dark-green {
+  background-color: DarkGreen;
+}
