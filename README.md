@@ -1,8 +1,9 @@
 # Colors
 
 - [Color Scheme](https://jmthompson2015.github.io/colors/color-scheme/app/ColorScheme.html)
-- [Color Wheel](https://jmthompson2015.github.io/colors/color-wheel/app/ColorWheel.html)
+- [Color Wheel](https://jmthompson2015.github.io/colors/color-wheel/ColorWheel.html)
 - [CSS Named Colors](https://jmthompson2015.github.io/colors/css-named-colors/app/CssNamedColors.html)
+- [Grays](https://jmthompson2015.github.io/colors/grays/ColorWheel.html)
 
 ## Built With
 
