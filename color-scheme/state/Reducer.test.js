@@ -1,6 +1,7 @@
+import Color from "../../model/Color.js";
+
 import AppState from "./AppState.js";
 import ActionCreator from "./ActionCreator.js";
-import Color from "./Color.js";
 import Reducer from "./Reducer.js";
 
 QUnit.module("Reducer");

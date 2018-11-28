@@ -1,7 +1,8 @@
-import Color from "../state/Color.js";
+import Color from "../../model/Color.js";
+
+import RU from "../../view/ReactUtilities.js";
 
 import NumberInput from "./NumberInput.js";
-import ReactUtils from "./ReactUtilities.js";
 
 class ColorInput extends React.Component {
   constructor(props) {
@@ -53,19 +54,19 @@ class ColorInput extends React.Component {
     });
 
     const cells = [
-      ReactUtils.createCell("H", "labelH", "ph2"),
-      ReactUtils.createCell(inputH, "inputH"),
-      ReactUtils.createCell("S", "labelS", "ph2"),
-      ReactUtils.createCell(inputS, "inputS"),
-      ReactUtils.createCell("L", "labelL", "ph2"),
-      ReactUtils.createCell(inputL, "inputL"),
-      ReactUtils.createCell("A", "labelA", "ph2"),
-      ReactUtils.createCell(inputA, "inputA")
+      RU.createCell("H", "labelH", "ph2"),
+      RU.createCell(inputH, "inputH"),
+      RU.createCell("S", "labelS", "ph2"),
+      RU.createCell(inputS, "inputS"),
+      RU.createCell("L", "labelL", "ph2"),
+      RU.createCell(inputL, "inputL"),
+      RU.createCell("A", "labelA", "ph2"),
+      RU.createCell(inputA, "inputA")
     ];
 
-    const row = ReactUtils.createRow(cells, "colorInputRow");
+    const row = RU.createRow(cells, "colorInputRow");
 
-    return ReactUtils.createTable(row);
+    return RU.createTable(row);
   }
 }
 

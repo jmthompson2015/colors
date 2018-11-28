@@ -1,12 +1,12 @@
-import Color from "../state/Color.js";
-import ColorUtils from "../state/ColorUtilities.js";
+import Color from "../../model/Color.js";
+import CU from "../../model/ColorUtilities.js";
 
 import ComplementPanel from "./ComplementPanel.js";
 
 const createComplementPanel = color =>
   React.createElement(ComplementPanel, {
     color,
-    complement: ColorUtils.complementary(color)
+    complement: CU.complementary(color)
   });
 
 const color1 = Color.RED;

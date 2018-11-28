@@ -1,5 +1,6 @@
+import RU from "../../view/ReactUtilities.js";
+
 import ColorSwatch from "./ColorSwatch.js";
-import ReactUtils from "./ReactUtilities.js";
 
 class AchromaticPanel extends React.Component {
   render() {
@@ -16,13 +17,13 @@ class AchromaticPanel extends React.Component {
       title: "Achromatic"
     });
 
-    const cell0 = ReactUtils.createCell(swatch, "swatchCell", "ph2");
-    const cell1 = ReactUtils.createCell(achromaticUI, "achromaticCell", "ph2 pt2");
+    const cell0 = RU.createCell(swatch, "swatchCell", "ph2");
+    const cell1 = RU.createCell(achromaticUI, "achromaticCell", "ph2 pt2");
 
-    const row0 = ReactUtils.createRow(cell0, "row0");
-    const row1 = ReactUtils.createRow(cell1, "row1");
+    const row0 = RU.createRow(cell0, "row0");
+    const row1 = RU.createRow(cell1, "row1");
 
-    return ReactUtils.createTable([row0, row1], "achromaticPanelTable", "cs-bg-gray ma2 pv2");
+    return RU.createTable([row0, row1], "achromaticPanelTable", "cs-bg-gray ma2 pv2");
   }
 }
 

@@ -1,6 +1,6 @@
 /* eslint no-console: ["error", { allow: ["log"] }] */
 
-import Color from "../state/Color.js";
+import Color from "../../model/Color.js";
 
 import ColorInput from "./ColorInput.js";
 

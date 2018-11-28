@@ -2,6 +2,16 @@
 
 const ColorUtilities = {};
 
+const mod = (x, n) => ((x % n) + n) % n;
+
+ColorUtilities.achromatic = color => ({ h: color.h, s: 0, l: color.l });
+
+ColorUtilities.analogousLeft = color => ({ h: mod(color.h - 30, 360), s: color.s, l: color.l });
+
+ColorUtilities.analogousRight = color => ({ h: mod(color.h + 30, 360), s: color.s, l: color.l });
+
+ColorUtilities.complementary = color => ({ h: mod(color.h + 180, 360), s: color.s, l: color.l });
+
 /**
  * Converts an HSL color value to RGB. Conversion formula
  * adapted from http://en.wikipedia.org/wiki/HSL_color_space.
@@ -100,6 +110,10 @@ ColorUtilities.toStringRgb = rgb =>
 
 ColorUtilities.toStyle = color =>
   `hsl(${Math.round(color.h)}, ${Math.round(color.s)}%, ${Math.round(color.l)}%)`;
+
+ColorUtilities.triadicLeft = color => ({ h: mod(color.h - 120, 360), s: color.s, l: color.l });
+
+ColorUtilities.triadicRight = color => ({ h: mod(color.h + 120, 360), s: color.s, l: color.l });
 
 Object.freeze(ColorUtilities);
 

@@ -1,13 +1,13 @@
-import Color from "../state/Color.js";
-import ColorUtils from "../state/ColorUtilities.js";
+import Color from "../../model/Color.js";
+import CU from "../../model/ColorUtilities.js";
 
 import AnalogPanel from "./AnalogPanel.js";
 
 const createAnalogPanel = color =>
   React.createElement(AnalogPanel, {
     color,
-    analogousLeft: ColorUtils.analogousLeft(color),
-    analogousRight: ColorUtils.analogousRight(color)
+    analogousLeft: CU.analogousLeft(color),
+    analogousRight: CU.analogousRight(color)
   });
 
 const color1 = Color.RED;

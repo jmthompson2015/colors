@@ -1,7 +1,8 @@
-import Color from "../state/Color.js";
+import Color from "../../model/Color.js";
+
+import RU from "../../view/ReactUtilities.js";
 
 import ColorSwatch from "./ColorSwatch.js";
-import ReactUtils from "./ReactUtilities.js";
 
 class MonochromaticPanel extends React.Component {
   render() {
@@ -16,11 +17,11 @@ class MonochromaticPanel extends React.Component {
 
       const myColor = Color.create({ h: color.h, s, l });
       const swatch = React.createElement(ColorSwatch, { color: myColor, showDescription: true });
-      const cell = ReactUtils.createCell(swatch, `swatchCell${i}`, "ph2");
-      rows.push(ReactUtils.createRow(cell, `row${i}`));
+      const cell = RU.createCell(swatch, `swatchCell${i}`, "ph2");
+      rows.push(RU.createRow(cell, `row${i}`));
     }
 
-    return ReactUtils.createTable(rows, "monochromaticPanelTable", "center cs-bg-gray mh0 mv2 pv2");
+    return RU.createTable(rows, "monochromaticPanelTable", "center cs-bg-gray mh0 mv2 pv2");
   }
 }
 

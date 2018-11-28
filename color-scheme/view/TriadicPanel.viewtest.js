@@ -1,5 +1,5 @@
-import Color from "../state/Color.js";
-import CU from "../state/ColorUtilities.js";
+import Color from "../../model/Color.js";
+import CU from "../../model/ColorUtilities.js";
 
 import TriadicPanel from "./TriadicPanel.js";
 

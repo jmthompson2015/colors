@@ -17,6 +17,54 @@ const verifyRgb = assert => (result, expected, comment = "") => {
   assert.equal(round2(result.b), round2(expected.b), `${comment} b`);
 };
 
+QUnit.test("achromatic()", assert => {
+  const myVerify = verifyHsl(assert);
+  myVerify(CU.achromatic(Color.BLACK), Color.BLACK, "black");
+  myVerify(CU.achromatic(Color.create({ h: 120, s: 50, l: 50 })), { h: 120, s: 0, l: 50 }, "gray");
+  myVerify(CU.achromatic(Color.RED), { h: 0, s: 0, l: 50 }, "red");
+  myVerify(CU.achromatic(Color.GREEN), { h: 120, s: 0, l: 50 }, "green");
+  myVerify(CU.achromatic(Color.BLUE), { h: 240, s: 0, l: 50 }, "blue");
+  myVerify(CU.achromatic(Color.WHITE), Color.WHITE, "white");
+});
+
+QUnit.test("analogousLeft()", assert => {
+  const myVerify = verifyHsl(assert);
+  myVerify(CU.analogousLeft(Color.RED), { h: 330, s: 100, l: 50 }, "red");
+  myVerify(CU.analogousLeft(Color.GREEN), { h: 90, s: 100, l: 50 }, "green");
+  myVerify(CU.analogousLeft(Color.BLUE), { h: 210, s: 100, l: 50 }, "blue");
+
+  myVerify(CU.analogousLeft(Color.YELLOW), { h: 30, s: 100, l: 50 }, "yellow");
+  myVerify(CU.analogousLeft(Color.CYAN), { h: 150, s: 100, l: 50 }, "cyan");
+  myVerify(CU.analogousLeft(Color.MAGENTA), { h: 270, s: 100, l: 50 }, "magenta");
+
+  myVerify(CU.analogousLeft(Color.create({ s: 50 })), { h: 330, s: 50, l: 50 }, "medium red");
+});
+
+QUnit.test("analogousRight()", assert => {
+  const myVerify = verifyHsl(assert);
+  myVerify(CU.analogousRight(Color.RED), { h: 30, s: 100, l: 50 }, "red");
+  myVerify(CU.analogousRight(Color.GREEN), { h: 150, s: 100, l: 50 }, "green");
+  myVerify(CU.analogousRight(Color.BLUE), { h: 270, s: 100, l: 50 }, "blue");
+
+  myVerify(CU.analogousRight(Color.YELLOW), { h: 90, s: 100, l: 50 }, "yellow");
+  myVerify(CU.analogousRight(Color.CYAN), { h: 210, s: 100, l: 50 }, "cyan");
+  myVerify(CU.analogousRight(Color.MAGENTA), { h: 330, s: 100, l: 50 }, "magenta");
+
+  myVerify(CU.analogousRight(Color.create({ s: 50 })), { h: 30, s: 50, l: 50 }, "medium red");
+});
+
+QUnit.test("complementary() red", assert => {
+  // Setup.
+  const color = Color.RED;
+
+  // Run.
+  const result = CU.complementary(color);
+
+  // Verify.
+  assert.ok(result);
+  verifyHsl(assert)(result, { h: 180, s: 100, l: 50 });
+});
+
 QUnit.test("hslToRgb()", assert => {
   const myVerify = verifyRgb(assert);
   myVerify(CU.hslToRgb(0, 0, 0), { r: 0, g: 0, b: 0 }, "black");
@@ -120,6 +168,32 @@ QUnit.test("toStyle()", assert => {
   // Verify.
   assert.ok(result);
   assert.equal(result, "hsl(1, 2%, 3%)");
+});
+
+QUnit.test("triadicLeft()", assert => {
+  const myVerify = verifyHsl(assert);
+  myVerify(CU.triadicLeft(Color.RED), Color.BLUE, "red");
+  myVerify(CU.triadicLeft(Color.GREEN), Color.RED, "green");
+  myVerify(CU.triadicLeft(Color.BLUE), Color.GREEN, "blue");
+
+  myVerify(CU.triadicLeft(Color.YELLOW), Color.MAGENTA, "yellow");
+  myVerify(CU.triadicLeft(Color.CYAN), Color.YELLOW, "cyan");
+  myVerify(CU.triadicLeft(Color.MAGENTA), Color.CYAN, "magenta");
+
+  myVerify(CU.triadicLeft(Color.create({ s: 50 })), { h: 240, s: 50, l: 50 }, "medium red");
+});
+
+QUnit.test("triadicRight()", assert => {
+  const myVerify = verifyHsl(assert);
+  myVerify(CU.triadicRight(Color.RED), Color.GREEN, "red");
+  myVerify(CU.triadicRight(Color.GREEN), Color.BLUE, "green");
+  myVerify(CU.triadicRight(Color.BLUE), Color.RED, "blue");
+
+  myVerify(CU.triadicRight(Color.YELLOW), Color.CYAN, "yellow");
+  myVerify(CU.triadicRight(Color.CYAN), Color.MAGENTA, "cyan");
+  myVerify(CU.triadicRight(Color.MAGENTA), Color.YELLOW, "magenta");
+
+  myVerify(CU.triadicRight(Color.create({ s: 50 })), { h: 120, s: 50, l: 50 }, "medium red");
 });
 
 const ColorUtilitiesTest = {};

@@ -1,14 +1,14 @@
-import Color from "../state/Color.js";
-import ColorUtils from "../state/ColorUtilities.js";
+import Color from "../../model/Color.js";
+import CU from "../../model/ColorUtilities.js";
 
 import SplitComplementPanel from "./SplitComplementPanel.js";
 
 const createSplitComplementPanel = color => {
-  const complement = ColorUtils.complementary(color);
+  const complement = CU.complementary(color);
   return React.createElement(SplitComplementPanel, {
     color,
-    complementLeft: ColorUtils.analogousLeft(complement),
-    complementRight: ColorUtils.analogousRight(complement)
+    complementLeft: CU.analogousLeft(complement),
+    complementRight: CU.analogousRight(complement)
   });
 };
 

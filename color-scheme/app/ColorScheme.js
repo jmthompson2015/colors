@@ -1,8 +1,10 @@
+import Color from "../../model/Color.js";
+
+import RU from "../../view/ReactUtilities.js";
+
 import ActionCreator from "../state/ActionCreator.js";
-import Color from "../state/Color.js";
 import Reducer from "../state/Reducer.js";
 
-import RU from "../view/ReactUtilities.js";
 import TitledElement from "../view/TitledElement.js";
 
 import AchromaticContainer from "../container/AchromaticContainer.js";

@@ -1,12 +1,12 @@
-import Color from "../state/Color.js";
-import ColorUtils from "../state/ColorUtilities.js";
+import Color from "../../model/Color.js";
+import CU from "../../model/ColorUtilities.js";
 
 import AchromaticPanel from "./AchromaticPanel.js";
 
 const createAchromaticPanel = color =>
   React.createElement(AchromaticPanel, {
     color,
-    achromatic: ColorUtils.achromatic(color)
+    achromatic: CU.achromatic(color)
   });
 
 const color1 = Color.create({ l: 12 });

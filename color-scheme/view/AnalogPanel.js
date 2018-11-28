@@ -1,5 +1,6 @@
+import RU from "../../view/ReactUtilities.js";
+
 import ColorSwatch from "./ColorSwatch.js";
-import ReactUtils from "./ReactUtilities.js";
 
 class AnalogPanel extends React.Component {
   render() {
@@ -24,13 +25,13 @@ class AnalogPanel extends React.Component {
 
     const cellClassName = "ph2";
     const cells = [
-      ReactUtils.createCell(analogousLeftUI, "analogousLeftCell", cellClassName),
-      ReactUtils.createCell(swatch, "swatchCell", cellClassName),
-      ReactUtils.createCell(analogousRightUI, "analogousRightCell", cellClassName)
+      RU.createCell(analogousLeftUI, "analogousLeftCell", cellClassName),
+      RU.createCell(swatch, "swatchCell", cellClassName),
+      RU.createCell(analogousRightUI, "analogousRightCell", cellClassName)
     ];
-    const row = ReactUtils.createRow(cells, "analogPanelRow");
+    const row = RU.createRow(cells, "analogPanelRow");
 
-    return ReactUtils.createTable(row, "analogPanelTable", "cs-bg-gray ma2 pv2");
+    return RU.createTable(row, "analogPanelTable", "cs-bg-gray ma2 pv2");
   }
 }
 

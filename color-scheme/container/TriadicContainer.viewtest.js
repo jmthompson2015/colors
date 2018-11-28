@@ -1,5 +1,6 @@
+import Color from "../../model/Color.js";
+
 import ActionCreator from "../state/ActionCreator.js";
-import Color from "../state/Color.js";
 import Reducer from "../state/Reducer.js";
 
 import TriadicContainer from "./TriadicContainer.js";

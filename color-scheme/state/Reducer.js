@@ -1,8 +1,10 @@
 /* eslint no-console: ["error", { allow: ["log", "warn"] }] */
 
+import Color from "../../model/Color.js";
+import CU from "../../model/ColorUtilities.js";
+
 import ActionType from "./ActionType.js";
 import AppState from "./AppState.js";
-import CU from "./ColorUtilities.js";
 
 const Reducer = {};
 
@@ -25,14 +27,14 @@ Reducer.root = (state, action) => {
   switch (action.type) {
     case ActionType.SET_COLOR:
       console.log(`Reducer SET_COLOR ${JSON.stringify(action.color)}`);
-      newAchromatic = CU.achromatic(action.color);
-      newAnalogousLeft = CU.analogousLeft(action.color);
-      newAnalogousRight = CU.analogousRight(action.color);
-      newComplement = CU.complementary(action.color);
-      newComplementLeft = CU.analogousLeft(newComplement);
-      newComplementRight = CU.analogousRight(newComplement);
-      newTriadicLeft = CU.triadicLeft(action.color);
-      newTriadicRight = CU.triadicRight(action.color);
+      newAchromatic = Color.create(CU.achromatic(action.color));
+      newAnalogousLeft = Color.create(CU.analogousLeft(action.color));
+      newAnalogousRight = Color.create(CU.analogousRight(action.color));
+      newComplement = Color.create(CU.complementary(action.color));
+      newComplementLeft = Color.create(CU.analogousLeft(newComplement));
+      newComplementRight = Color.create(CU.analogousRight(newComplement));
+      newTriadicLeft = Color.create(CU.triadicLeft(action.color));
+      newTriadicRight = Color.create(CU.triadicRight(action.color));
       return R.pipe(
         R.assoc("color", action.color),
         R.assoc("achromatic", newAchromatic),

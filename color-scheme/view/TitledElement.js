@@ -1,4 +1,4 @@
-import RU from "./ReactUtilities.js";
+import RU from "../../view/ReactUtilities.js";
 
 class TitledElement extends React.Component {
   render() {

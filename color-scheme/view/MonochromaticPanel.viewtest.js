@@ -1,4 +1,4 @@
-import Color from "../state/Color.js";
+import Color from "../../model/Color.js";
 
 import MonochromaticPanel from "./MonochromaticPanel.js";
 

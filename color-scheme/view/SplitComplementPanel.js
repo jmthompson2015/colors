@@ -1,5 +1,6 @@
+import RU from "../../view/ReactUtilities.js";
+
 import ColorSwatch from "./ColorSwatch.js";
-import ReactUtils from "./ReactUtilities.js";
 
 class SplitComplementPanel extends React.Component {
   render() {
@@ -23,18 +24,18 @@ class SplitComplementPanel extends React.Component {
     });
 
     const cellClassName = "ph2";
-    const cell1 = ReactUtils.createCell(swatch, "swatchCell", cellClassName);
-    const row1 = ReactUtils.createRow(cell1, "splitComplementRow1");
+    const cell1 = RU.createCell(swatch, "swatchCell", cellClassName);
+    const row1 = RU.createRow(cell1, "splitComplementRow1");
     const cells = [
-      ReactUtils.createCell(complementRightUI, "complementRightCell", cellClassName),
-      ReactUtils.createCell(complementLeftUI, "complementLeftCell", cellClassName)
+      RU.createCell(complementRightUI, "complementRightCell", cellClassName),
+      RU.createCell(complementLeftUI, "complementLeftCell", cellClassName)
     ];
-    const row = ReactUtils.createRow(cells, "splitComplementRow");
-    const table = ReactUtils.createTable(row, "splitComplementTable");
-    const cell2 = ReactUtils.createCell(table, "splitComplementCell", cellClassName);
-    const row2 = ReactUtils.createRow(cell2, "splitComplementPanelRow2");
+    const row = RU.createRow(cells, "splitComplementRow");
+    const table = RU.createTable(row, "splitComplementTable");
+    const cell2 = RU.createCell(table, "splitComplementCell", cellClassName);
+    const row2 = RU.createRow(cell2, "splitComplementPanelRow2");
 
-    return ReactUtils.createTable([row1, row2], "splitComplementPanelTable", "cs-bg-gray ma2 pv2");
+    return RU.createTable([row1, row2], "splitComplementPanelTable", "cs-bg-gray ma2 pv2");
   }
 }
 

@@ -1,6 +1,6 @@
-import ColorUtils from "../state/ColorUtilities.js";
+import CU from "../../model/ColorUtilities.js";
 
-import ReactUtils from "./ReactUtilities.js";
+import RU from "../../view/ReactUtilities.js";
 
 class ColorSwatch extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class ColorSwatch extends React.Component {
 
     const swatch = ReactDOMFactories.div({
       className: "center mh0",
-      style: { backgroundColor: ColorUtils.toStyle(color), height, width }
+      style: { backgroundColor: CU.toStyle(color), height, width }
     });
 
     if (showTitle || showDescription) {
@@ -16,22 +16,22 @@ class ColorSwatch extends React.Component {
       const rows = [];
 
       if (showTitle) {
-        const titleUI = ReactUtils.createSpan(title);
-        const cell0 = ReactUtils.createCell(titleUI, "titleCell", titleClass);
-        rows.push(ReactUtils.createRow(cell0, "titleRow"));
+        const titleUI = RU.createSpan(title);
+        const cell0 = RU.createCell(titleUI, "titleCell", titleClass);
+        rows.push(RU.createRow(cell0, "titleRow"));
       }
 
-      const cell1 = ReactUtils.createCell(swatch, "swatchCell");
-      rows.push(ReactUtils.createRow(cell1, "swatchRow"));
+      const cell1 = RU.createCell(swatch, "swatchCell");
+      rows.push(RU.createRow(cell1, "swatchRow"));
 
       if (showDescription) {
-        const description = ColorUtils.toString(color);
-        const descriptionUI = ReactUtils.createSpan(description);
-        const cell2 = ReactUtils.createCell(descriptionUI, "descriptionCell", descriptionClass);
-        rows.push(ReactUtils.createRow(cell2, "descriptionRow"));
+        const description = CU.toString(color);
+        const descriptionUI = RU.createSpan(description);
+        const cell2 = RU.createCell(descriptionUI, "descriptionCell", descriptionClass);
+        rows.push(RU.createRow(cell2, "descriptionRow"));
       }
 
-      return ReactUtils.createTable(rows, "colorSwatchTable", "center mh0");
+      return RU.createTable(rows, "colorSwatchTable", "center mh0");
     }
 
     return swatch;
