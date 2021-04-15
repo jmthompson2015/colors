@@ -1,5 +1,5 @@
-import CssNamedColor from "../model/CssNamedColor.js";
-import RGBAxis from "../model/RGBAxis.js";
+import CssNamedColor from "../../artifact/CssNamedColor.js";
+import RGBAxis from "../../artifact/RGBAxis.js";
 
 import AxisSelect from "../view/AxisSelect.js";
 import ColorTable from "../view/ColorTable.js";

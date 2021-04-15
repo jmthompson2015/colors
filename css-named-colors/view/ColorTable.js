@@ -1,7 +1,7 @@
+import Vector from "../../artifact/Vector.js";
+
 import DataTable from "./DataTable.js";
 import TableColumns from "./TableColumns.js";
-
-import Vector from "../model/Vector.js";
 
 const round2 = (value) => Math.round(value * 100.0) / 100.0;
 

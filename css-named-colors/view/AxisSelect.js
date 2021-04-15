@@ -1,6 +1,6 @@
-import RGBAxis from "../model/RGBAxis.js";
+import RGBAxis from "../../artifact/RGBAxis.js";
 
-const createOption = key => {
+const createOption = (key) => {
   const rgbAxis = RGBAxis.properties[key];
 
   return ReactDOMFactories.option({ key, value: key }, rgbAxis.name);
@@ -16,7 +16,7 @@ const groupToKeys = {
   Primary: ["red", "green", "blue"],
   Secondary: ["yellow", "cyan", "magenta"],
   Tertiary: ["orange", "chartreuse", "springGreen", "azure", "violet", "rose"],
-  Other: ["gray"]
+  Other: ["gray"],
 };
 
 class AxisSelect extends React.Component {
@@ -37,7 +37,7 @@ class AxisSelect extends React.Component {
     const { axisKey } = this.props;
     const options0 = [ReactDOMFactories.option({ key: "-none-" }, "-none-")];
     const optgroups = R.map(
-      group => createOptgroup(group, groupToKeys[group]),
+      (group) => createOptgroup(group, groupToKeys[group]),
       Object.keys(groupToKeys)
     );
 
@@ -52,11 +52,11 @@ class AxisSelect extends React.Component {
 AxisSelect.propTypes = {
   onChange: PropTypes.func.isRequired,
 
-  axisKey: PropTypes.string
+  axisKey: PropTypes.string,
 };
 
 AxisSelect.defaultProps = {
-  axisKey: undefined
+  axisKey: undefined,
 };
 
 export default AxisSelect;
