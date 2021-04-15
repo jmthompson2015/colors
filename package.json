@@ -22,23 +22,23 @@
   },
   "homepage": "https://github.com/jmthompson2015/colors#readme",
   "devDependencies": {
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1",
-    "qunit": "^2.8.0"
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "qunit": "^2.15.0"
   },
   "dependencies": {
-    "prop-types": "^15.6.2",
-    "ramda": "^0.26.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "prop-types": "^15.7.2",
+    "ramda": "^0.27.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-dom-factories": "^1.0.2",
-    "react-redux": "^5.1.1",
-    "redux": "^4.0.1",
+    "react-redux": "^7.2.3",
+    "redux": "^4.0.5",
     "seamless-immutable": "^7.1.4",
-    "tachyons": "^4.11.1"
+    "tachyons": "^4.12.0"
   }
 }
