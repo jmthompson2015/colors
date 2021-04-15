@@ -1,4 +1,3 @@
-import EnumUtils from "./EnumUtilities.js";
 import Vector from "./Vector.js";
 import VectorUtils from "./VectorUtilities.js";
 
@@ -32,100 +31,104 @@ const RGBAxis = {
       r: 1.0,
       g: 0.0,
       b: 0.0,
-      key: "red"
+      key: "red",
     },
     green: {
       name: "Green",
       r: 0.0,
       g: 1.0,
       b: 0.0,
-      key: "green"
+      key: "green",
     },
     blue: {
       name: "Blue",
       r: 0.0,
       g: 0.0,
       b: 1.0,
-      key: "blue"
+      key: "blue",
     },
     yellow: {
       name: "Yellow",
       r: 0.7071,
       g: 0.7071,
       b: 0.0,
-      key: "yellow"
+      key: "yellow",
     },
     magenta: {
       name: "Magenta",
       r: 0.7071,
       g: 0.0,
       b: 0.7071,
-      key: "magenta"
+      key: "magenta",
     },
     cyan: {
       name: "Cyan",
       r: 0.0,
       g: 0.7071,
       b: 0.7071,
-      key: "cyan"
+      key: "cyan",
     },
     orange: {
       name: "Orange",
       r: 0.8944,
       g: 0.4472,
       b: 0.0,
-      key: "orange"
+      key: "orange",
     },
     chartreuse: {
       name: "Chartreuse",
       r: 0.4472,
       g: 0.8944,
       b: 0.0,
-      key: "chartreuse"
+      key: "chartreuse",
     },
     springGreen: {
       name: "Spring Green",
       r: 0.0,
       g: 0.8944,
       b: 0.4472,
-      key: "springGreen"
+      key: "springGreen",
     },
     azure: {
       name: "Azure",
       r: 0.0,
       g: 0.4472,
       b: 0.8944,
-      key: "azure"
+      key: "azure",
     },
     violet: {
       name: "Violet",
       r: 0.4472,
       g: 0.0,
       b: 0.8944,
-      key: "violet"
+      key: "violet",
     },
     rose: {
       name: "Rose",
       r: 0.8944,
       g: 0.0,
       b: 0.4472,
-      key: "rose"
+      key: "rose",
     },
     gray: {
       name: "Gray",
       r: 0.5774,
       g: 0.5774,
       b: 0.5774,
-      key: "gray"
-    }
-  }
+      key: "gray",
+    },
+  },
 };
 
-R.forEach(axisKey => {
+RGBAxis.keys = () => Object.keys(RGBAxis.properties);
+
+RGBAxis.values = () => Object.values(RGBAxis.properties);
+
+R.forEach((axisKey) => {
   const axis = RGBAxis.properties[axisKey];
   axis.vector = Vector.create({ x: axis.r, y: axis.g, z: axis.b });
   axis.magnitude = VectorUtils.magnitude(axis.vector);
-}, EnumUtils.keys(RGBAxis));
+}, RGBAxis.keys());
 
 Object.freeze(RGBAxis);
 

@@ -1,4 +1,3 @@
-import EnumUtils from "./EnumUtilities.js";
 import Vector from "./Vector.js";
 import VectorUtils from "./VectorUtilities.js";
 
@@ -154,133 +153,133 @@ const CssNamedColor = {
       r: 240,
       g: 248,
       b: 255,
-      key: "AliceBlue"
+      key: "AliceBlue",
     },
     AntiqueWhite: {
       hex: "#FAEBD7",
       r: 250,
       g: 235,
       b: 215,
-      key: "AntiqueWhite"
+      key: "AntiqueWhite",
     },
     Aquamarine: {
       hex: "#7FFFD4",
       r: 127,
       g: 255,
       b: 212,
-      key: "Aquamarine"
+      key: "Aquamarine",
     },
     Azure: {
       hex: "#F0FFFF",
       r: 240,
       g: 255,
       b: 255,
-      key: "Azure"
+      key: "Azure",
     },
     Beige: {
       hex: "#F5F5DC",
       r: 245,
       g: 245,
       b: 220,
-      key: "Beige"
+      key: "Beige",
     },
     Bisque: {
       hex: "#FFE4C4",
       r: 255,
       g: 228,
       b: 196,
-      key: "Bisque"
+      key: "Bisque",
     },
     Black: {
       hex: "#000000",
       r: 0,
       g: 0,
       b: 0,
-      key: "Black"
+      key: "Black",
     },
     BlanchedAlmond: {
       hex: "#FFEBCD",
       r: 255,
       g: 235,
       b: 205,
-      key: "BlanchedAlmond"
+      key: "BlanchedAlmond",
     },
     Blue: {
       hex: "#0000FF",
       r: 0,
       g: 0,
       b: 255,
-      key: "Blue"
+      key: "Blue",
     },
     BlueViolet: {
       hex: "#8A2BE2",
       r: 138,
       g: 43,
       b: 226,
-      key: "BlueViolet"
+      key: "BlueViolet",
     },
     Brown: {
       hex: "#A52A2A",
       r: 165,
       g: 42,
       b: 42,
-      key: "Brown"
+      key: "Brown",
     },
     Burlywood: {
       hex: "#DEB887",
       r: 222,
       g: 184,
       b: 135,
-      key: "Burlywood"
+      key: "Burlywood",
     },
     CadetBlue: {
       hex: "#5F9EA0",
       r: 95,
       g: 158,
       b: 160,
-      key: "CadetBlue"
+      key: "CadetBlue",
     },
     Chartreuse: {
       hex: "#7FFF00",
       r: 127,
       g: 255,
       b: 0,
-      key: "Chartreuse"
+      key: "Chartreuse",
     },
     Chocolate: {
       hex: "#D2691E",
       r: 210,
       g: 105,
       b: 30,
-      key: "Chocolate"
+      key: "Chocolate",
     },
     Coral: {
       hex: "#FF7F50",
       r: 255,
       g: 127,
       b: 80,
-      key: "Coral"
+      key: "Coral",
     },
     CornflowerBlue: {
       hex: "#6495ED",
       r: 100,
       g: 149,
       b: 237,
-      key: "CornflowerBlue"
+      key: "CornflowerBlue",
     },
     Cornsilk: {
       hex: "#FFF8DC",
       r: 255,
       g: 248,
       b: 220,
-      key: "Cornsilk"
+      key: "Cornsilk",
     },
     Crimson: {
       hex: "#DC143C",
       r: 220,
       g: 20,
       b: 60,
-      key: "Crimson"
+      key: "Crimson",
     },
     Cyan: {
       displayName: "Cyan / Aqua",
@@ -288,28 +287,28 @@ const CssNamedColor = {
       r: 0,
       g: 255,
       b: 255,
-      key: "Cyan"
+      key: "Cyan",
     },
     DarkBlue: {
       hex: "#00008B",
       r: 0,
       g: 0,
       b: 139,
-      key: "DarkBlue"
+      key: "DarkBlue",
     },
     DarkCyan: {
       hex: "#008B8B",
       r: 0,
       g: 139,
       b: 139,
-      key: "DarkCyan"
+      key: "DarkCyan",
     },
     DarkGoldenrod: {
       hex: "#B8860B",
       r: 184,
       g: 134,
       b: 11,
-      key: "DarkGoldenrod"
+      key: "DarkGoldenrod",
     },
     DarkGray: {
       displayName: "DarkGray / DarkGrey",
@@ -317,77 +316,77 @@ const CssNamedColor = {
       r: 169,
       g: 169,
       b: 169,
-      key: "DarkGray"
+      key: "DarkGray",
     },
     DarkGreen: {
       hex: "#006400",
       r: 0,
       g: 100,
       b: 0,
-      key: "DarkGreen"
+      key: "DarkGreen",
     },
     DarkKhaki: {
       hex: "#BDB76B",
       r: 189,
       g: 183,
       b: 107,
-      key: "DarkKhaki"
+      key: "DarkKhaki",
     },
     DarkMagenta: {
       hex: "#8B008B",
       r: 139,
       g: 0,
       b: 139,
-      key: "DarkMagenta"
+      key: "DarkMagenta",
     },
     DarkOliveGreen: {
       hex: "#556B2F",
       r: 85,
       g: 107,
       b: 47,
-      key: "DarkOliveGreen"
+      key: "DarkOliveGreen",
     },
     DarkOrange: {
       hex: "#FF8C00",
       r: 255,
       g: 140,
       b: 0,
-      key: "DarkOrange"
+      key: "DarkOrange",
     },
     DarkOrchid: {
       hex: "#9932CC",
       r: 153,
       g: 50,
       b: 204,
-      key: "DarkOrchid"
+      key: "DarkOrchid",
     },
     DarkRed: {
       hex: "#8B0000",
       r: 139,
       g: 0,
       b: 0,
-      key: "DarkRed"
+      key: "DarkRed",
     },
     DarkSalmon: {
       hex: "#E9967A",
       r: 233,
       g: 150,
       b: 122,
-      key: "DarkSalmon"
+      key: "DarkSalmon",
     },
     DarkSeaGreen: {
       hex: "#8FBC8F",
       r: 143,
       g: 188,
       b: 143,
-      key: "DarkSeaGreen"
+      key: "DarkSeaGreen",
     },
     DarkSlateBlue: {
       hex: "#483D8B",
       r: 72,
       g: 61,
       b: 139,
-      key: "DarkSlateBlue"
+      key: "DarkSlateBlue",
     },
     DarkSlateGray: {
       displayName: "DarkSlateGray / DarkSlateGrey",
@@ -395,35 +394,35 @@ const CssNamedColor = {
       r: 47,
       g: 79,
       b: 79,
-      key: "DarkSlateGray"
+      key: "DarkSlateGray",
     },
     DarkTurquoise: {
       hex: "#00CED1",
       r: 0,
       g: 206,
       b: 209,
-      key: "DarkTurquoise"
+      key: "DarkTurquoise",
     },
     DarkViolet: {
       hex: "#9400D3",
       r: 148,
       g: 0,
       b: 211,
-      key: "DarkViolet"
+      key: "DarkViolet",
     },
     DeepPink: {
       hex: "#FF1493",
       r: 255,
       g: 20,
       b: 147,
-      key: "DeepPink"
+      key: "DeepPink",
     },
     DeepSkyBlue: {
       hex: "#00BFFF",
       r: 0,
       g: 191,
       b: 255,
-      key: "DeepSkyBlue"
+      key: "DeepSkyBlue",
     },
     DimGray: {
       displayName: "DimGray / DimGrey",
@@ -431,63 +430,63 @@ const CssNamedColor = {
       r: 105,
       g: 105,
       b: 105,
-      key: "DimGray"
+      key: "DimGray",
     },
     DodgerBlue: {
       hex: "#1E90FF",
       r: 30,
       g: 144,
       b: 255,
-      key: "DodgerBlue"
+      key: "DodgerBlue",
     },
     Firebrick: {
       hex: "#B22222",
       r: 178,
       g: 34,
       b: 34,
-      key: "Firebrick"
+      key: "Firebrick",
     },
     FloralWhite: {
       hex: "#FFFAF0",
       r: 255,
       g: 250,
       b: 240,
-      key: "FloralWhite"
+      key: "FloralWhite",
     },
     ForestGreen: {
       hex: "#228B22",
       r: 34,
       g: 139,
       b: 34,
-      key: "ForestGreen"
+      key: "ForestGreen",
     },
     Gainsboro: {
       hex: "#DCDCDC",
       r: 220,
       g: 220,
       b: 220,
-      key: "Gainsboro"
+      key: "Gainsboro",
     },
     GhostWhite: {
       hex: "#F8F8FF",
       r: 248,
       g: 248,
       b: 255,
-      key: "GhostWhite"
+      key: "GhostWhite",
     },
     Gold: {
       hex: "#FFD700",
       r: 255,
       g: 215,
       b: 0,
-      key: "Gold"
+      key: "Gold",
     },
     Goldenrod: {
       hex: "#DAA520",
       r: 218,
       g: 165,
       b: 32,
-      key: "Goldenrod"
+      key: "Goldenrod",
     },
     Gray: {
       displayName: "Gray / Grey",
@@ -495,119 +494,119 @@ const CssNamedColor = {
       r: 128,
       g: 128,
       b: 128,
-      key: "Gray"
+      key: "Gray",
     },
     Green: {
       hex: "#008000",
       r: 0,
       g: 128,
       b: 0,
-      key: "Green"
+      key: "Green",
     },
     GreenYellow: {
       hex: "#ADFF2F",
       r: 173,
       g: 255,
       b: 47,
-      key: "GreenYellow"
+      key: "GreenYellow",
     },
     Honeydew: {
       hex: "#F0FFF0",
       r: 240,
       g: 255,
       b: 240,
-      key: "Honeydew"
+      key: "Honeydew",
     },
     HotPink: {
       hex: "#FF69B4",
       r: 255,
       g: 105,
       b: 180,
-      key: "HotPink"
+      key: "HotPink",
     },
     IndianRed: {
       hex: "#CD5C5C",
       r: 205,
       g: 92,
       b: 92,
-      key: "IndianRed"
+      key: "IndianRed",
     },
     Indigo: {
       hex: "#4B0082",
       r: 75,
       g: 0,
       b: 130,
-      key: "Indigo"
+      key: "Indigo",
     },
     Ivory: {
       hex: "#FFFFF0",
       r: 255,
       g: 255,
       b: 240,
-      key: "Ivory"
+      key: "Ivory",
     },
     Khaki: {
       hex: "#F0E68C",
       r: 240,
       g: 230,
       b: 140,
-      key: "Khaki"
+      key: "Khaki",
     },
     Lavender: {
       hex: "#E6E6FA",
       r: 230,
       g: 230,
       b: 250,
-      key: "Lavender"
+      key: "Lavender",
     },
     LavenderBlush: {
       hex: "#FFF0F5",
       r: 255,
       g: 240,
       b: 245,
-      key: "LavenderBlush"
+      key: "LavenderBlush",
     },
     LawnGreen: {
       hex: "#7CFC00",
       r: 124,
       g: 252,
       b: 0,
-      key: "LawnGreen"
+      key: "LawnGreen",
     },
     LemonChiffon: {
       hex: "#FFFACD",
       r: 255,
       g: 250,
       b: 205,
-      key: "LemonChiffon"
+      key: "LemonChiffon",
     },
     LightBlue: {
       hex: "#ADD8E6",
       r: 173,
       g: 216,
       b: 230,
-      key: "LightBlue"
+      key: "LightBlue",
     },
     LightCoral: {
       hex: "#F08080",
       r: 240,
       g: 128,
       b: 128,
-      key: "LightCoral"
+      key: "LightCoral",
     },
     LightCyan: {
       hex: "#E0FFFF",
       r: 224,
       g: 255,
       b: 255,
-      key: "LightCyan"
+      key: "LightCyan",
     },
     LightGoldenrodYellow: {
       hex: "#FAFAD2",
       r: 250,
       g: 250,
       b: 210,
-      key: "LightGoldenrodYellow"
+      key: "LightGoldenrodYellow",
     },
     LightGray: {
       displayName: "LightGray / LightGrey",
@@ -615,42 +614,42 @@ const CssNamedColor = {
       r: 211,
       g: 211,
       b: 211,
-      key: "LightGray"
+      key: "LightGray",
     },
     LightGreen: {
       hex: "#90EE90",
       r: 144,
       g: 238,
       b: 144,
-      key: "LightGreen"
+      key: "LightGreen",
     },
     LightPink: {
       hex: "#FFB6C1",
       r: 255,
       g: 182,
       b: 193,
-      key: "LightPink"
+      key: "LightPink",
     },
     LightSalmon: {
       hex: "#FFA07A",
       r: 255,
       g: 160,
       b: 122,
-      key: "LightSalmon"
+      key: "LightSalmon",
     },
     LightSeaGreen: {
       hex: "#20B2AA",
       r: 32,
       g: 178,
       b: 170,
-      key: "LightSeaGreen"
+      key: "LightSeaGreen",
     },
     LightSkyBlue: {
       hex: "#87CEFA",
       r: 135,
       g: 206,
       b: 250,
-      key: "LightSkyBlue"
+      key: "LightSkyBlue",
     },
     LightSlateGray: {
       displayName: "LightSlateGray / LightSlateGrey",
@@ -658,42 +657,42 @@ const CssNamedColor = {
       r: 119,
       g: 136,
       b: 153,
-      key: "LightSlateGray"
+      key: "LightSlateGray",
     },
     LightSteelBlue: {
       hex: "#B0C4DE",
       r: 176,
       g: 196,
       b: 222,
-      key: "LightSteelBlue"
+      key: "LightSteelBlue",
     },
     LightYellow: {
       hex: "#FFFFE0",
       r: 255,
       g: 255,
       b: 224,
-      key: "LightYellow"
+      key: "LightYellow",
     },
     Lime: {
       hex: "#00FF00",
       r: 0,
       g: 255,
       b: 0,
-      key: "Lime"
+      key: "Lime",
     },
     LimeGreen: {
       hex: "#32CD32",
       r: 50,
       g: 205,
       b: 50,
-      key: "LimeGreen"
+      key: "LimeGreen",
     },
     Linen: {
       hex: "#FAF0E6",
       r: 250,
       g: 240,
       b: 230,
-      key: "Linen"
+      key: "Linen",
     },
     Magenta: {
       displayName: "Magenta / Fuchsia",
@@ -701,329 +700,329 @@ const CssNamedColor = {
       r: 255,
       g: 0,
       b: 255,
-      key: "Magenta"
+      key: "Magenta",
     },
     Maroon: {
       hex: "#800000",
       r: 128,
       g: 0,
       b: 0,
-      key: "Maroon"
+      key: "Maroon",
     },
     MediumAquamarine: {
       hex: "#66CDAA",
       r: 102,
       g: 205,
       b: 170,
-      key: "MediumAquamarine"
+      key: "MediumAquamarine",
     },
     MediumBlue: {
       hex: "#0000CD",
       r: 0,
       g: 0,
       b: 205,
-      key: "MediumBlue"
+      key: "MediumBlue",
     },
     MediumOrchid: {
       hex: "#BA55D3",
       r: 186,
       g: 85,
       b: 211,
-      key: "MediumOrchid"
+      key: "MediumOrchid",
     },
     MediumPurple: {
       hex: "#9370DB",
       r: 147,
       g: 112,
       b: 219,
-      key: "MediumPurple"
+      key: "MediumPurple",
     },
     MediumSeaGreen: {
       hex: "#3CB371",
       r: 60,
       g: 179,
       b: 113,
-      key: "MediumSeaGreen"
+      key: "MediumSeaGreen",
     },
     MediumSlateBlue: {
       hex: "#7B68EE",
       r: 123,
       g: 104,
       b: 238,
-      key: "MediumSlateBlue"
+      key: "MediumSlateBlue",
     },
     MediumSpringGreen: {
       hex: "#00FA9A",
       r: 0,
       g: 250,
       b: 154,
-      key: "MediumSpringGreen"
+      key: "MediumSpringGreen",
     },
     MediumTurquoise: {
       hex: "#48D1CC",
       r: 72,
       g: 209,
       b: 204,
-      key: "MediumTurquoise"
+      key: "MediumTurquoise",
     },
     MediumVioletRed: {
       hex: "#C71585",
       r: 199,
       g: 21,
       b: 133,
-      key: "MediumVioletRed"
+      key: "MediumVioletRed",
     },
     MidnightBlue: {
       hex: "#191970",
       r: 25,
       g: 25,
       b: 112,
-      key: "MidnightBlue"
+      key: "MidnightBlue",
     },
     MintCream: {
       hex: "#F5FFFA",
       r: 245,
       g: 255,
       b: 250,
-      key: "MintCream"
+      key: "MintCream",
     },
     MistyRose: {
       hex: "#FFE4E1",
       r: 255,
       g: 228,
       b: 225,
-      key: "MistyRose"
+      key: "MistyRose",
     },
     Moccasin: {
       hex: "#FFE4B5",
       r: 255,
       g: 228,
       b: 181,
-      key: "Moccasin"
+      key: "Moccasin",
     },
     NavajoWhite: {
       hex: "#FFDEAD",
       r: 255,
       g: 222,
       b: 173,
-      key: "NavajoWhite"
+      key: "NavajoWhite",
     },
     Navy: {
       hex: "#000080",
       r: 0,
       g: 0,
       b: 128,
-      key: "Navy"
+      key: "Navy",
     },
     OldLace: {
       hex: "#FDF5E6",
       r: 253,
       g: 245,
       b: 230,
-      key: "OldLace"
+      key: "OldLace",
     },
     Olive: {
       hex: "#808000",
       r: 128,
       g: 128,
       b: 0,
-      key: "Olive"
+      key: "Olive",
     },
     OliveDrab: {
       hex: "#6B8E23",
       r: 107,
       g: 142,
       b: 35,
-      key: "OliveDrab"
+      key: "OliveDrab",
     },
     Orange: {
       hex: "#FFA500",
       r: 255,
       g: 165,
       b: 0,
-      key: "Orange"
+      key: "Orange",
     },
     OrangeRed: {
       hex: "#FF4500",
       r: 255,
       g: 69,
       b: 0,
-      key: "OrangeRed"
+      key: "OrangeRed",
     },
     Orchid: {
       hex: "#DA70D6",
       r: 218,
       g: 112,
       b: 214,
-      key: "Orchid"
+      key: "Orchid",
     },
     PaleGoldenrod: {
       hex: "#EEE8AA",
       r: 238,
       g: 232,
       b: 170,
-      key: "PaleGoldenrod"
+      key: "PaleGoldenrod",
     },
     PaleGreen: {
       hex: "#98FB98",
       r: 152,
       g: 251,
       b: 152,
-      key: "PaleGreen"
+      key: "PaleGreen",
     },
     PaleTurquoise: {
       hex: "#AFEEEE",
       r: 175,
       g: 238,
       b: 238,
-      key: "PaleTurquoise"
+      key: "PaleTurquoise",
     },
     PaleVioletRed: {
       hex: "#DB7093",
       r: 219,
       g: 112,
       b: 147,
-      key: "PaleVioletRed"
+      key: "PaleVioletRed",
     },
     PapayaWhip: {
       hex: "#FFEFD5",
       r: 255,
       g: 239,
       b: 213,
-      key: "PapayaWhip"
+      key: "PapayaWhip",
     },
     PeachPuff: {
       hex: "#FFDAB9",
       r: 255,
       g: 218,
       b: 185,
-      key: "PeachPuff"
+      key: "PeachPuff",
     },
     Peru: {
       hex: "#CD853F",
       r: 205,
       g: 133,
       b: 63,
-      key: "Peru"
+      key: "Peru",
     },
     Pink: {
       hex: "#FFC0CB",
       r: 255,
       g: 192,
       b: 203,
-      key: "Pink"
+      key: "Pink",
     },
     Plum: {
       hex: "#DDA0DD",
       r: 221,
       g: 160,
       b: 221,
-      key: "Plum"
+      key: "Plum",
     },
     PowderBlue: {
       hex: "#B0E0E6",
       r: 176,
       g: 224,
       b: 230,
-      key: "PowderBlue"
+      key: "PowderBlue",
     },
     Purple: {
       hex: "#800080",
       r: 128,
       g: 0,
       b: 128,
-      key: "Purple"
+      key: "Purple",
     },
     RebeccaPurple: {
       hex: "#663399",
       r: 102,
       g: 51,
       b: 153,
-      key: "RebeccaPurple"
+      key: "RebeccaPurple",
     },
     Red: {
       hex: "#FF0000",
       r: 255,
       g: 0,
       b: 0,
-      key: "Red"
+      key: "Red",
     },
     RosyBrown: {
       hex: "#BC8F8F",
       r: 188,
       g: 143,
       b: 143,
-      key: "RosyBrown"
+      key: "RosyBrown",
     },
     RoyalBlue: {
       hex: "#4169E1",
       r: 65,
       g: 105,
       b: 225,
-      key: "RoyalBlue"
+      key: "RoyalBlue",
     },
     SaddleBrown: {
       hex: "#8B4513",
       r: 139,
       g: 69,
       b: 19,
-      key: "SaddleBrown"
+      key: "SaddleBrown",
     },
     Salmon: {
       hex: "#FA8072",
       r: 250,
       g: 128,
       b: 114,
-      key: "Salmon"
+      key: "Salmon",
     },
     SandyBrown: {
       hex: "#F4A460",
       r: 244,
       g: 164,
       b: 96,
-      key: "SandyBrown"
+      key: "SandyBrown",
     },
     SeaGreen: {
       hex: "#2E8B57",
       r: 46,
       g: 139,
       b: 87,
-      key: "SeaGreen"
+      key: "SeaGreen",
     },
     Seashell: {
       hex: "#FFF5EE",
       r: 255,
       g: 245,
       b: 238,
-      key: "Seashell"
+      key: "Seashell",
     },
     Sienna: {
       hex: "#A0522D",
       r: 160,
       g: 82,
       b: 45,
-      key: "Sienna"
+      key: "Sienna",
     },
     Silver: {
       hex: "#C0C0C0",
       r: 192,
       g: 192,
       b: 192,
-      key: "Silver"
+      key: "Silver",
     },
     SkyBlue: {
       hex: "#87CEEB",
       r: 135,
       g: 206,
       b: 235,
-      key: "SkyBlue"
+      key: "SkyBlue",
     },
     SlateBlue: {
       hex: "#6A5ACD",
       r: 106,
       g: 90,
       b: 205,
-      key: "SlateBlue"
+      key: "SlateBlue",
     },
     SlateGray: {
       displayName: "SlateGray / SlateGrey",
@@ -1031,116 +1030,121 @@ const CssNamedColor = {
       r: 112,
       g: 128,
       b: 144,
-      key: "SlateGray"
+      key: "SlateGray",
     },
     Snow: {
       hex: "#FFFAFA",
       r: 255,
       g: 250,
       b: 250,
-      key: "Snow"
+      key: "Snow",
     },
     SpringGreen: {
       hex: "#00FF7F",
       r: 0,
       g: 255,
       b: 127,
-      key: "SpringGreen"
+      key: "SpringGreen",
     },
     SteelBlue: {
       hex: "#4682B4",
       r: 70,
       g: 130,
       b: 180,
-      key: "SteelBlue"
+      key: "SteelBlue",
     },
     Tan: {
       hex: "#D2B48C",
       r: 210,
       g: 180,
       b: 140,
-      key: "Tan"
+      key: "Tan",
     },
     Teal: {
       hex: "#008080",
       r: 0,
       g: 128,
       b: 128,
-      key: "Teal"
+      key: "Teal",
     },
     Thistle: {
       hex: "#D8BFD8",
       r: 216,
       g: 191,
       b: 216,
-      key: "Thistle"
+      key: "Thistle",
     },
     Tomato: {
       hex: "#FF6347",
       r: 255,
       g: 99,
       b: 71,
-      key: "Tomato"
+      key: "Tomato",
     },
     Turquoise: {
       hex: "#40E0D0",
       r: 64,
       g: 224,
       b: 208,
-      key: "Turquoise"
+      key: "Turquoise",
     },
     Violet: {
       hex: "#EE82EE",
       r: 238,
       g: 130,
       b: 238,
-      key: "Violet"
+      key: "Violet",
     },
     Wheat: {
       hex: "#F5DEB3",
       r: 245,
       g: 222,
       b: 179,
-      key: "Wheat"
+      key: "Wheat",
     },
     White: {
       hex: "#FFFFFF",
       r: 255,
       g: 255,
       b: 255,
-      key: "White"
+      key: "White",
     },
     WhiteSmoke: {
       hex: "#F5F5F5",
       r: 245,
       g: 245,
       b: 245,
-      key: "WhiteSmoke"
+      key: "WhiteSmoke",
     },
     Yellow: {
       hex: "#FFFF00",
       r: 255,
       g: 255,
       b: 0,
-      key: "Yellow"
+      key: "Yellow",
     },
     YellowGreen: {
       hex: "#9ACD32",
       r: 154,
       g: 205,
       b: 50,
-      key: "YellowGreen"
-    }
-  }
+      key: "YellowGreen",
+    },
+  },
 };
 
-R.forEach(colorKey => {
+CssNamedColor.keys = () => Object.keys(CssNamedColor.properties);
+
+CssNamedColor.values = () => Object.values(CssNamedColor.properties);
+
+R.forEach((colorKey) => {
   const color = CssNamedColor.properties[colorKey];
-  color.displayName = color.displayName !== undefined ? color.displayName : colorKey;
+  color.displayName =
+    color.displayName !== undefined ? color.displayName : colorKey;
   color.vector = Vector.create({ x: color.r, y: color.g, z: color.b });
   const myVector = VectorUtils.multiply(color.vector, 1.0 / 256.0);
   color.magnitude = VectorUtils.magnitude(myVector);
-}, EnumUtils.keys(CssNamedColor));
+}, CssNamedColor.keys(CssNamedColor));
 
 Object.freeze(CssNamedColor);
 

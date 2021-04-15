@@ -1,23 +1,22 @@
 import CssNamedColor from "../model/CssNamedColor.js";
-import EnumUtils from "../model/EnumUtilities.js";
 import RGBAxis from "../model/RGBAxis.js";
 
 import AxisSelect from "../view/AxisSelect.js";
 import ColorTable from "../view/ColorTable.js";
 
 let axisKey;
-const rowData = EnumUtils.values(CssNamedColor);
+const rowData = CssNamedColor.values();
 
 function createColorTable() {
   const element = React.createElement(ColorTable, {
     axis: RGBAxis.properties[axisKey],
-    rowData
+    rowData,
   });
 
   ReactDOM.render(
     ReactDOMFactories.div(
       {
-        className: "center tc"
+        className: "center tc",
       },
       element
     ),
