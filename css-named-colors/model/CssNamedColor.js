@@ -1,5 +1,4 @@
 import Vector from "./Vector.js";
-import VectorUtils from "./VectorUtilities.js";
 
 /*
  * Provides CSS named colors.
@@ -1142,8 +1141,8 @@ R.forEach((colorKey) => {
   color.displayName =
     color.displayName !== undefined ? color.displayName : colorKey;
   color.vector = Vector.create({ x: color.r, y: color.g, z: color.b });
-  const myVector = VectorUtils.multiply(color.vector, 1.0 / 256.0);
-  color.magnitude = VectorUtils.magnitude(myVector);
+  const myVector = Vector.multiply(color.vector, 1.0 / 256.0);
+  color.magnitude = Vector.magnitude(myVector);
 }, CssNamedColor.keys(CssNamedColor));
 
 Object.freeze(CssNamedColor);

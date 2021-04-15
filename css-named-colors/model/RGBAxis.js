@@ -1,5 +1,4 @@
 import Vector from "./Vector.js";
-import VectorUtils from "./VectorUtilities.js";
 
 /*
  * Provides a color axis for each fundamental color as a unit vector in RGB
@@ -127,7 +126,7 @@ RGBAxis.values = () => Object.values(RGBAxis.properties);
 R.forEach((axisKey) => {
   const axis = RGBAxis.properties[axisKey];
   axis.vector = Vector.create({ x: axis.r, y: axis.g, z: axis.b });
-  axis.magnitude = VectorUtils.magnitude(axis.vector);
+  axis.magnitude = Vector.magnitude(axis.vector);
 }, RGBAxis.keys());
 
 Object.freeze(RGBAxis);
