@@ -1,4 +1,4 @@
-import RU from "../../view/ReactUtilities.js";
+const RU = ReactComponent.ReactUtilities;
 
 class TitledElement extends React.Component {
   render() {
@@ -7,7 +7,10 @@ class TitledElement extends React.Component {
     const titleCell = RU.createCell(title, "titleCell", titleClass);
     const elementCell = RU.createCell(element, "elementCell");
 
-    const rows = [RU.createRow(titleCell, "titleRow"), RU.createRow(elementCell, "elementRow")];
+    const rows = [
+      RU.createRow(titleCell, "titleRow"),
+      RU.createRow(elementCell, "elementRow"),
+    ];
 
     return RU.createTable(rows, "titledElementTable", className);
   }
@@ -18,12 +21,12 @@ TitledElement.propTypes = {
   title: PropTypes.string.isRequired,
 
   className: PropTypes.string,
-  titleClass: PropTypes.string
+  titleClass: PropTypes.string,
 };
 
 TitledElement.defaultProps = {
   className: "bg-light-gray",
-  titleClass: "b f5 ph1 pt1 tc"
+  titleClass: "b f5 ph1 pt1 tc",
 };
 
 export default TitledElement;

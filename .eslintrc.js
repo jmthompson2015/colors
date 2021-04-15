@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    browser: true
+    browser: true,
   },
   extends: ["airbnb", "prettier"],
   globals: {
@@ -10,13 +10,14 @@ module.exports = {
     R: true,
     React: true,
     Reactable: true,
+    ReactComponent: true,
     ReactDOM: true,
     ReactDOMFactories: true,
     ReactRedux: true,
-    Redux: true
+    Redux: true,
   },
   rules: {
     "import/extensions": ["error", { js: "always" }],
-    "max-len": ["error", { code: 100, ignoreUrls: true }]
-  }
+    "max-len": ["error", { code: 100, ignoreUrls: true }],
+  },
 };

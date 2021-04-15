@@ -1,6 +1,6 @@
 import CU from "../model/ColorUtilities.js";
 
-import RU from "../view/ReactUtilities.js";
+const RU = ReactComponent.ReactUtilities;
 
 const createHeaderRow = () => {
   const headerClass = "b ba b--gray cw-bg-dark-green pa1 tc v-mid white";
@@ -8,16 +8,16 @@ const createHeaderRow = () => {
     RU.createCell("Color", "colorHeaderCell", headerClass),
     RU.createCell("Name", "nameHeaderCell", headerClass),
     RU.createCell("HSL", "hslHeaderCell", headerClass),
-    RU.createCell("RGB", "rgbHeaderCell", headerClass)
+    RU.createCell("RGB", "rgbHeaderCell", headerClass),
   ];
 
   return RU.createRow(cells, "headerRow");
 };
 
-const createRow = color => {
+const createRow = (color) => {
   const swatch = ReactDOMFactories.div({
     className: "m0 p0 w-100",
-    style: { backgroundColor: CU.toStyle(color), height: 25 }
+    style: { backgroundColor: CU.toStyle(color), height: 25 },
   });
   const rgb = CU.hslToRgb(color.h, color.s, color.l);
   const cellClass = "b--gray ba v-mid";
@@ -25,7 +25,7 @@ const createRow = color => {
     RU.createCell(swatch, "colorCell", cellClass),
     RU.createCell(color.name, "nameCell", `${cellClass} pa1`),
     RU.createCell(CU.toString(color), "hslCell", `${cellClass} pa1 tc`),
-    RU.createCell(CU.toStringRgb(rgb), "rgbCell", `${cellClass} pa1 tc`)
+    RU.createCell(CU.toStringRgb(rgb), "rgbCell", `${cellClass} pa1 tc`),
   ];
 
   return RU.createRow(cells, `row${CU.toString(color)}`);
@@ -44,7 +44,7 @@ class ColorTable extends React.Component {
 }
 
 ColorTable.propTypes = {
-  colors: PropTypes.arrayOf(PropTypes.shape()).isRequired
+  colors: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
 export default ColorTable;

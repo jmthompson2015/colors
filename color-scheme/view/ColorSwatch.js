@@ -1,6 +1,6 @@
 import CU from "../../model/ColorUtilities.js";
 
-import RU from "../../view/ReactUtilities.js";
+const RU = ReactComponent.ReactUtilities;
 
 class ColorSwatch extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class ColorSwatch extends React.Component {
 
     const swatch = ReactDOMFactories.div({
       className: "center mh0",
-      style: { backgroundColor: CU.toStyle(color), height, width }
+      style: { backgroundColor: CU.toStyle(color), height, width },
     });
 
     if (showTitle || showDescription) {
@@ -27,7 +27,11 @@ class ColorSwatch extends React.Component {
       if (showDescription) {
         const description = CU.toString(color);
         const descriptionUI = RU.createSpan(description);
-        const cell2 = RU.createCell(descriptionUI, "descriptionCell", descriptionClass);
+        const cell2 = RU.createCell(
+          descriptionUI,
+          "descriptionCell",
+          descriptionClass
+        );
         rows.push(RU.createRow(cell2, "descriptionRow"));
       }
 
@@ -47,7 +51,7 @@ ColorSwatch.propTypes = {
   showTitle: PropTypes.bool,
   title: PropTypes.string,
   titleClass: PropTypes.string,
-  width: PropTypes.number
+  width: PropTypes.number,
 };
 
 ColorSwatch.defaultProps = {
@@ -57,7 +61,7 @@ ColorSwatch.defaultProps = {
   showDescription: false,
   title: "Color",
   titleClass: "b f5 tc",
-  width: 110
+  width: 110,
 };
 
 export default ColorSwatch;

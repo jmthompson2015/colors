@@ -1,8 +1,8 @@
 import Color from "../../model/Color.js";
 
-import RU from "../../view/ReactUtilities.js";
-
 import NumberInput from "./NumberInput.js";
+
+const RU = ReactComponent.ReactUtilities;
 
 class ColorInput extends React.Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class ColorInput extends React.Component {
     const newColor = Color.create({
       h: parseInt(h, 10),
       s: parseInt(s, 10),
-      l: parseInt(l, 10)
+      l: parseInt(l, 10),
     });
 
     onChange(newColor);
@@ -32,25 +32,25 @@ class ColorInput extends React.Component {
       id: "inputH",
       onBlur: this.handleChange,
       initialValue: color.h,
-      className: "filterField"
+      className: "filterField",
     });
     const inputS = React.createElement(NumberInput, {
       id: "inputS",
       onBlur: this.handleChange,
       initialValue: color.s,
-      className: "filterField"
+      className: "filterField",
     });
     const inputL = React.createElement(NumberInput, {
       id: "inputL",
       onBlur: this.handleChange,
       initialValue: color.l,
-      className: "filterField"
+      className: "filterField",
     });
     const inputA = React.createElement(NumberInput, {
       id: "inputA",
       onBlur: this.handleChange,
       initialValue: color.a,
-      className: "filterField"
+      className: "filterField",
     });
 
     const cells = [
@@ -61,7 +61,7 @@ class ColorInput extends React.Component {
       RU.createCell("L", "labelL", "ph2"),
       RU.createCell(inputL, "inputL"),
       RU.createCell("A", "labelA", "ph2"),
-      RU.createCell(inputA, "inputA")
+      RU.createCell(inputA, "inputA"),
     ];
 
     const row = RU.createRow(cells, "colorInputRow");
@@ -72,7 +72,7 @@ class ColorInput extends React.Component {
 
 ColorInput.propTypes = {
   color: PropTypes.shape().isRequired,
-  onChange: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired,
 };
 
 export default ColorInput;

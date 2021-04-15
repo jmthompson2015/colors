@@ -1,8 +1,8 @@
 import Color from "../model/Color.js";
 
-import RU from "../view/ReactUtilities.js";
-
 import ColorTable from "./ColorTable.js";
+
+const RU = ReactComponent.ReactUtilities;
 
 const colors1 = [
   Color.WHITE,
@@ -14,7 +14,7 @@ const colors1 = [
   Color.DIM_GRAY,
   Color.DAVYS_GRAY,
   Color.JET,
-  Color.BLACK
+  Color.BLACK,
 ];
 const title1 = ReactDOMFactories.h2({}, "Achromatic Grays");
 const subtitle1 = ReactDOMFactories.span({}, "Formed with equal RGB values.");
@@ -26,7 +26,7 @@ const colors2 = [
   Color.BATTLESHIP_GRAY,
   Color.NICKEL,
   Color.CHARCOAL,
-  Color.GUNMETAL
+  Color.GUNMETAL,
 ];
 const title2 = ReactDOMFactories.h2({}, "Off-Grays");
 const subtitle2 = ReactDOMFactories.span(
@@ -42,7 +42,7 @@ const colors3 = [
   Color.GLAUCOUS,
   Color.SLATE_GRAY,
   Color.GRAY_GREEN,
-  Color.MARENGO
+  Color.MARENGO,
 ];
 const title3 = ReactDOMFactories.h2({}, "Cool Grays");
 const subtitle3 = ReactDOMFactories.span(
@@ -56,17 +56,20 @@ const colors4 = [
   Color.ROSE_QUARTZ,
   Color.CINEREOUS,
   Color.ROCKET_METALLIC,
-  Color.TAUPE
+  Color.TAUPE,
 ];
 const title4 = ReactDOMFactories.h2({}, "Warm Grays");
-const subtitle4 = ReactDOMFactories.span({}, "Brownish, pinkish grays, or reddish purple grays.");
+const subtitle4 = ReactDOMFactories.span(
+  {},
+  "Brownish, pinkish grays, or reddish purple grays."
+);
 const element4 = React.createElement(ColorTable, { colors: colors4 });
 
 const cells = [
   RU.createCell([title1, subtitle1, element1], "element1", "pa2"),
   RU.createCell([title2, subtitle2, element2], "element2", "pa2"),
   RU.createCell([title3, subtitle3, element3], "element3", "pa2"),
-  RU.createCell([title4, subtitle4, element4], "element4", "pa2")
+  RU.createCell([title4, subtitle4, element4], "element4", "pa2"),
 ];
 
 const element = RU.createFlexboxWrap(cells, "panel");

@@ -1,8 +1,8 @@
 import Color from "../../model/Color.js";
 
-import RU from "../../view/ReactUtilities.js";
-
 import ColorSwatch from "./ColorSwatch.js";
+
+const RU = ReactComponent.ReactUtilities;
 
 class MonochromaticPanel extends React.Component {
   render() {
@@ -16,23 +16,30 @@ class MonochromaticPanel extends React.Component {
       const l = varySaturation ? color.l : (i * 100) / count;
 
       const myColor = Color.create({ h: color.h, s, l });
-      const swatch = React.createElement(ColorSwatch, { color: myColor, showDescription: true });
+      const swatch = React.createElement(ColorSwatch, {
+        color: myColor,
+        showDescription: true,
+      });
       const cell = RU.createCell(swatch, `swatchCell${i}`, "ph2");
       rows.push(RU.createRow(cell, `row${i}`));
     }
 
-    return RU.createTable(rows, "monochromaticPanelTable", "center cs-bg-gray mh0 mv2 pv2");
+    return RU.createTable(
+      rows,
+      "monochromaticPanelTable",
+      "center cs-bg-gray mh0 mv2 pv2"
+    );
   }
 }
 
 MonochromaticPanel.propTypes = {
   color: PropTypes.shape().isRequired,
 
-  varySaturation: PropTypes.bool
+  varySaturation: PropTypes.bool,
 };
 
 MonochromaticPanel.defaultProps = {
-  varySaturation: false
+  varySaturation: false,
 };
 
 export default MonochromaticPanel;
