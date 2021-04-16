@@ -1,0 +1,9 @@
+.frt-table td {
+  border: 1px solid Gray;
+}
+
+.frt-table th {
+  background-color: Gray;
+  border: 1px solid White;
+  color: White;
+}

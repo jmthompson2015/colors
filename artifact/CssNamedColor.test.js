@@ -2,6 +2,20 @@ import CssNamedColor from "./CssNamedColor.js";
 
 QUnit.module("CssNamedColor");
 
+QUnit.test("color()", (assert) => {
+  // Setup.
+  const colorKey = CssNamedColor.RED;
+
+  // Run.
+  const result = CssNamedColor.color(colorKey);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result.r, 255);
+  assert.equal(result.g, 0);
+  assert.equal(result.b, 0);
+});
+
 QUnit.test("keys and values", (assert) => {
   // Run.
   const result = CssNamedColor.keys();

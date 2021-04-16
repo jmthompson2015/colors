@@ -1145,6 +1145,8 @@ R.forEach((colorKey) => {
   color.magnitude = Vector.magnitude(myVector);
 }, CssNamedColor.keys(CssNamedColor));
 
+CssNamedColor.color = (colorKey) => CssNamedColor.properties[colorKey];
+
 Object.freeze(CssNamedColor);
 
 export default CssNamedColor;
