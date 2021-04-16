@@ -2,7 +2,7 @@
 
 export BASE=/Volumes/StorageDrive/jmthompson/git/colors
 
-open ${BASE}/model/TestSuite.html
+open ${BASE}/artifact/TestSuite.html
 
 open ${BASE}/color-scheme/state/TestSuite.html
 ${BASE}/color-scheme/view/viewtest-suite.sh

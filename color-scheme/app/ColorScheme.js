@@ -1,4 +1,4 @@
-import Color from "../../model/Color.js";
+import Color from "../../artifact/Color.js";
 
 import ActionCreator from "../state/ActionCreator.js";
 import Reducer from "../state/Reducer.js";

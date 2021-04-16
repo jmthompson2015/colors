@@ -1,4 +1,4 @@
-import CU from "../../model/ColorUtilities.js";
+import CU from "../../artifact/ColorUtilities.js";
 
 const RU = ReactComponent.ReactUtilities;
 

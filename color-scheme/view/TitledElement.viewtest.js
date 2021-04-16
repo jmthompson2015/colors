@@ -1,4 +1,4 @@
-import Color from "../../model/Color.js";
+import Color from "../../artifact/Color.js";
 
 import AchromaticPanel from "./AchromaticPanel.js";
 import ComplementPanel from "./ComplementPanel.js";

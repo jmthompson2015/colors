@@ -1,4 +1,4 @@
-import Color from "../../model/Color.js";
+import Color from "../../artifact/Color.js";
 
 import AppState from "./AppState.js";
 import ActionCreator from "./ActionCreator.js";

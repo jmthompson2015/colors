@@ -1,7 +1,7 @@
 /* eslint no-console: ["error", { allow: ["log", "warn"] }] */
 
-import Color from "../../model/Color.js";
-import CU from "../../model/ColorUtilities.js";
+import Color from "../../artifact/Color.js";
+import CU from "../../artifact/ColorUtilities.js";
 
 import ActionType from "./ActionType.js";
 import AppState from "./AppState.js";

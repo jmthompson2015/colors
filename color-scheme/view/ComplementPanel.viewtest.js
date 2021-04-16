@@ -1,5 +1,5 @@
-import Color from "../../model/Color.js";
-import CU from "../../model/ColorUtilities.js";
+import Color from "../../artifact/Color.js";
+import CU from "../../artifact/ColorUtilities.js";
 
 import ComplementPanel from "./ComplementPanel.js";
 

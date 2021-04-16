@@ -2,7 +2,7 @@
 
 import CssNamedColor from "../artifact/CssNamedColor.js";
 
-import ColorUtilities from "../model/ColorUtilities.js";
+import ColorUtilities from "../artifact/ColorUtilities.js";
 
 import TableColumns from "./TableColumns.js";
 
