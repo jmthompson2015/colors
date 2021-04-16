@@ -7,7 +7,7 @@ const TableColumns = [
     key: "swatch",
     label: "Swatch",
     className: "h2 w3",
-    valueFunction: (row) => row.displayName,
+    valueFunction: (row) => row.name,
     cellFunction: (row) => {
       const { r, g, b, title } = row;
       const colorString = `${r},${g},${b}`;
@@ -19,7 +19,7 @@ const TableColumns = [
     },
   },
   {
-    key: "displayName",
+    key: "name",
     label: "CSS Name",
     className: "tl",
   },

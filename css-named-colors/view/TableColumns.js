@@ -1,38 +1,38 @@
 const TableColumns = [
   {
     key: "swatch",
-    label: "Swatch"
+    label: "Swatch",
   },
   {
-    key: "displayName",
-    label: "Name",
-    className: "tl"
+    key: "name",
+    label: "CSS Name",
+    className: "tl",
   },
   {
     key: "hex",
     label: "Hex",
-    className: "tc"
+    className: "tc",
   },
   {
     key: "decimal",
     label: "Decimal",
-    className: "tc"
+    className: "tc",
   },
   {
     key: "magnitude",
     label: "Magnitude",
-    className: "tr"
+    className: "tr",
   },
   {
     key: "onAxis",
     label: "On Axis",
-    className: "tr"
+    className: "tr",
   },
   {
     key: "offAxis",
     label: "Off Axis",
-    className: "tr"
-  }
+    className: "tr",
+  },
 ];
 
 export default TableColumns;

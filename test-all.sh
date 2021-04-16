@@ -10,7 +10,6 @@ ${BASE}/color-scheme/container/viewtest-suite.sh
 
 ${BASE}/color-wheel/viewtest-suite.sh
 
-open ${BASE}/css-named-colors/model/TestSuite.html
 ${BASE}/css-named-colors/view/viewtest-suite.sh
 
 ${BASE}/grays/viewtest-suite.sh

@@ -150,6 +150,7 @@ const CssNamedColor = {
 
   properties: {
     AliceBlue: {
+      name: "AliceBlue",
       hex: "#F0F8FF",
       r: 240,
       g: 248,
@@ -157,6 +158,7 @@ const CssNamedColor = {
       key: "AliceBlue",
     },
     AntiqueWhite: {
+      name: "AntiqueWhite",
       hex: "#FAEBD7",
       r: 250,
       g: 235,
@@ -164,6 +166,7 @@ const CssNamedColor = {
       key: "AntiqueWhite",
     },
     Aquamarine: {
+      name: "Aquamarine",
       hex: "#7FFFD4",
       r: 127,
       g: 255,
@@ -171,6 +174,7 @@ const CssNamedColor = {
       key: "Aquamarine",
     },
     Azure: {
+      name: "Azure",
       hex: "#F0FFFF",
       r: 240,
       g: 255,
@@ -178,6 +182,7 @@ const CssNamedColor = {
       key: "Azure",
     },
     Beige: {
+      name: "Beige",
       hex: "#F5F5DC",
       r: 245,
       g: 245,
@@ -185,6 +190,7 @@ const CssNamedColor = {
       key: "Beige",
     },
     Bisque: {
+      name: "Bisque",
       hex: "#FFE4C4",
       r: 255,
       g: 228,
@@ -192,6 +198,7 @@ const CssNamedColor = {
       key: "Bisque",
     },
     Black: {
+      name: "Black",
       hex: "#000000",
       r: 0,
       g: 0,
@@ -199,6 +206,7 @@ const CssNamedColor = {
       key: "Black",
     },
     BlanchedAlmond: {
+      name: "BlanchedAlmond",
       hex: "#FFEBCD",
       r: 255,
       g: 235,
@@ -206,6 +214,7 @@ const CssNamedColor = {
       key: "BlanchedAlmond",
     },
     Blue: {
+      name: "Blue",
       hex: "#0000FF",
       r: 0,
       g: 0,
@@ -213,6 +222,7 @@ const CssNamedColor = {
       key: "Blue",
     },
     BlueViolet: {
+      name: "BlueViolet",
       hex: "#8A2BE2",
       r: 138,
       g: 43,
@@ -220,6 +230,7 @@ const CssNamedColor = {
       key: "BlueViolet",
     },
     Brown: {
+      name: "Brown",
       hex: "#A52A2A",
       r: 165,
       g: 42,
@@ -227,6 +238,7 @@ const CssNamedColor = {
       key: "Brown",
     },
     Burlywood: {
+      name: "Burlywood",
       hex: "#DEB887",
       r: 222,
       g: 184,
@@ -234,6 +246,7 @@ const CssNamedColor = {
       key: "Burlywood",
     },
     CadetBlue: {
+      name: "CadetBlue",
       hex: "#5F9EA0",
       r: 95,
       g: 158,
@@ -241,6 +254,7 @@ const CssNamedColor = {
       key: "CadetBlue",
     },
     Chartreuse: {
+      name: "Chartreuse",
       hex: "#7FFF00",
       r: 127,
       g: 255,
@@ -248,6 +262,7 @@ const CssNamedColor = {
       key: "Chartreuse",
     },
     Chocolate: {
+      name: "Chocolate",
       hex: "#D2691E",
       r: 210,
       g: 105,
@@ -255,6 +270,7 @@ const CssNamedColor = {
       key: "Chocolate",
     },
     Coral: {
+      name: "Coral",
       hex: "#FF7F50",
       r: 255,
       g: 127,
@@ -262,6 +278,7 @@ const CssNamedColor = {
       key: "Coral",
     },
     CornflowerBlue: {
+      name: "CornflowerBlue",
       hex: "#6495ED",
       r: 100,
       g: 149,
@@ -269,6 +286,7 @@ const CssNamedColor = {
       key: "CornflowerBlue",
     },
     Cornsilk: {
+      name: "Cornsilk",
       hex: "#FFF8DC",
       r: 255,
       g: 248,
@@ -276,6 +294,7 @@ const CssNamedColor = {
       key: "Cornsilk",
     },
     Crimson: {
+      name: "Crimson",
       hex: "#DC143C",
       r: 220,
       g: 20,
@@ -283,7 +302,7 @@ const CssNamedColor = {
       key: "Crimson",
     },
     Cyan: {
-      displayName: "Cyan / Aqua",
+      name: "Cyan",
       hex: "#00FFFF",
       r: 0,
       g: 255,
@@ -291,6 +310,7 @@ const CssNamedColor = {
       key: "Cyan",
     },
     DarkBlue: {
+      name: "DarkBlue",
       hex: "#00008B",
       r: 0,
       g: 0,
@@ -298,6 +318,7 @@ const CssNamedColor = {
       key: "DarkBlue",
     },
     DarkCyan: {
+      name: "DarkCyan",
       hex: "#008B8B",
       r: 0,
       g: 139,
@@ -305,6 +326,7 @@ const CssNamedColor = {
       key: "DarkCyan",
     },
     DarkGoldenrod: {
+      name: "DarkGoldenrod",
       hex: "#B8860B",
       r: 184,
       g: 134,
@@ -312,7 +334,7 @@ const CssNamedColor = {
       key: "DarkGoldenrod",
     },
     DarkGray: {
-      displayName: "DarkGray",
+      name: "DarkGray",
       hex: "#A9A9A9",
       r: 169,
       g: 169,
@@ -320,6 +342,7 @@ const CssNamedColor = {
       key: "DarkGray",
     },
     DarkGreen: {
+      name: "DarkGreen",
       hex: "#006400",
       r: 0,
       g: 100,
@@ -327,6 +350,7 @@ const CssNamedColor = {
       key: "DarkGreen",
     },
     DarkKhaki: {
+      name: "DarkKhaki",
       hex: "#BDB76B",
       r: 189,
       g: 183,
@@ -334,6 +358,7 @@ const CssNamedColor = {
       key: "DarkKhaki",
     },
     DarkMagenta: {
+      name: "DarkMagenta",
       hex: "#8B008B",
       r: 139,
       g: 0,
@@ -341,6 +366,7 @@ const CssNamedColor = {
       key: "DarkMagenta",
     },
     DarkOliveGreen: {
+      name: "DarkOliveGreen",
       hex: "#556B2F",
       r: 85,
       g: 107,
@@ -348,6 +374,7 @@ const CssNamedColor = {
       key: "DarkOliveGreen",
     },
     DarkOrange: {
+      name: "DarkOrange",
       hex: "#FF8C00",
       r: 255,
       g: 140,
@@ -355,6 +382,7 @@ const CssNamedColor = {
       key: "DarkOrange",
     },
     DarkOrchid: {
+      name: "DarkOrchid",
       hex: "#9932CC",
       r: 153,
       g: 50,
@@ -362,6 +390,7 @@ const CssNamedColor = {
       key: "DarkOrchid",
     },
     DarkRed: {
+      name: "DarkRed",
       hex: "#8B0000",
       r: 139,
       g: 0,
@@ -369,6 +398,7 @@ const CssNamedColor = {
       key: "DarkRed",
     },
     DarkSalmon: {
+      name: "DarkSalmon",
       hex: "#E9967A",
       r: 233,
       g: 150,
@@ -376,6 +406,7 @@ const CssNamedColor = {
       key: "DarkSalmon",
     },
     DarkSeaGreen: {
+      name: "DarkSeaGreen",
       hex: "#8FBC8F",
       r: 143,
       g: 188,
@@ -383,6 +414,7 @@ const CssNamedColor = {
       key: "DarkSeaGreen",
     },
     DarkSlateBlue: {
+      name: "DarkSlateBlue",
       hex: "#483D8B",
       r: 72,
       g: 61,
@@ -390,7 +422,7 @@ const CssNamedColor = {
       key: "DarkSlateBlue",
     },
     DarkSlateGray: {
-      displayName: "DarkSlateGray",
+      name: "DarkSlateGray",
       hex: "#2F4F4F",
       r: 47,
       g: 79,
@@ -398,6 +430,7 @@ const CssNamedColor = {
       key: "DarkSlateGray",
     },
     DarkTurquoise: {
+      name: "DarkTurquoise",
       hex: "#00CED1",
       r: 0,
       g: 206,
@@ -405,6 +438,7 @@ const CssNamedColor = {
       key: "DarkTurquoise",
     },
     DarkViolet: {
+      name: "DarkViolet",
       hex: "#9400D3",
       r: 148,
       g: 0,
@@ -412,6 +446,7 @@ const CssNamedColor = {
       key: "DarkViolet",
     },
     DeepPink: {
+      name: "DeepPink",
       hex: "#FF1493",
       r: 255,
       g: 20,
@@ -419,6 +454,7 @@ const CssNamedColor = {
       key: "DeepPink",
     },
     DeepSkyBlue: {
+      name: "DeepSkyBlue",
       hex: "#00BFFF",
       r: 0,
       g: 191,
@@ -426,7 +462,7 @@ const CssNamedColor = {
       key: "DeepSkyBlue",
     },
     DimGray: {
-      displayName: "DimGray",
+      name: "DimGray",
       hex: "#696969",
       r: 105,
       g: 105,
@@ -434,6 +470,7 @@ const CssNamedColor = {
       key: "DimGray",
     },
     DodgerBlue: {
+      name: "DodgerBlue",
       hex: "#1E90FF",
       r: 30,
       g: 144,
@@ -441,6 +478,7 @@ const CssNamedColor = {
       key: "DodgerBlue",
     },
     Firebrick: {
+      name: "Firebrick",
       hex: "#B22222",
       r: 178,
       g: 34,
@@ -448,6 +486,7 @@ const CssNamedColor = {
       key: "Firebrick",
     },
     FloralWhite: {
+      name: "FloralWhite",
       hex: "#FFFAF0",
       r: 255,
       g: 250,
@@ -455,6 +494,7 @@ const CssNamedColor = {
       key: "FloralWhite",
     },
     ForestGreen: {
+      name: "ForestGreen",
       hex: "#228B22",
       r: 34,
       g: 139,
@@ -462,6 +502,7 @@ const CssNamedColor = {
       key: "ForestGreen",
     },
     Gainsboro: {
+      name: "Gainsboro",
       hex: "#DCDCDC",
       r: 220,
       g: 220,
@@ -469,6 +510,7 @@ const CssNamedColor = {
       key: "Gainsboro",
     },
     GhostWhite: {
+      name: "GhostWhite",
       hex: "#F8F8FF",
       r: 248,
       g: 248,
@@ -476,6 +518,7 @@ const CssNamedColor = {
       key: "GhostWhite",
     },
     Gold: {
+      name: "Gold",
       hex: "#FFD700",
       r: 255,
       g: 215,
@@ -483,6 +526,7 @@ const CssNamedColor = {
       key: "Gold",
     },
     Goldenrod: {
+      name: "Goldenrod",
       hex: "#DAA520",
       r: 218,
       g: 165,
@@ -490,7 +534,7 @@ const CssNamedColor = {
       key: "Goldenrod",
     },
     Gray: {
-      displayName: "Gray",
+      name: "Gray",
       hex: "#808080",
       r: 128,
       g: 128,
@@ -498,6 +542,7 @@ const CssNamedColor = {
       key: "Gray",
     },
     Green: {
+      name: "Green",
       hex: "#008000",
       r: 0,
       g: 128,
@@ -505,6 +550,7 @@ const CssNamedColor = {
       key: "Green",
     },
     GreenYellow: {
+      name: "GreenYellow",
       hex: "#ADFF2F",
       r: 173,
       g: 255,
@@ -512,6 +558,7 @@ const CssNamedColor = {
       key: "GreenYellow",
     },
     Honeydew: {
+      name: "Honeydew",
       hex: "#F0FFF0",
       r: 240,
       g: 255,
@@ -519,6 +566,7 @@ const CssNamedColor = {
       key: "Honeydew",
     },
     HotPink: {
+      name: "HotPink",
       hex: "#FF69B4",
       r: 255,
       g: 105,
@@ -526,6 +574,7 @@ const CssNamedColor = {
       key: "HotPink",
     },
     IndianRed: {
+      name: "IndianRed",
       hex: "#CD5C5C",
       r: 205,
       g: 92,
@@ -533,6 +582,7 @@ const CssNamedColor = {
       key: "IndianRed",
     },
     Indigo: {
+      name: "Indigo",
       hex: "#4B0082",
       r: 75,
       g: 0,
@@ -540,6 +590,7 @@ const CssNamedColor = {
       key: "Indigo",
     },
     Ivory: {
+      name: "Ivory",
       hex: "#FFFFF0",
       r: 255,
       g: 255,
@@ -547,6 +598,7 @@ const CssNamedColor = {
       key: "Ivory",
     },
     Khaki: {
+      name: "Khaki",
       hex: "#F0E68C",
       r: 240,
       g: 230,
@@ -554,6 +606,7 @@ const CssNamedColor = {
       key: "Khaki",
     },
     Lavender: {
+      name: "Lavender",
       hex: "#E6E6FA",
       r: 230,
       g: 230,
@@ -561,6 +614,7 @@ const CssNamedColor = {
       key: "Lavender",
     },
     LavenderBlush: {
+      name: "LavenderBlush",
       hex: "#FFF0F5",
       r: 255,
       g: 240,
@@ -568,6 +622,7 @@ const CssNamedColor = {
       key: "LavenderBlush",
     },
     LawnGreen: {
+      name: "LawnGreen",
       hex: "#7CFC00",
       r: 124,
       g: 252,
@@ -575,6 +630,7 @@ const CssNamedColor = {
       key: "LawnGreen",
     },
     LemonChiffon: {
+      name: "LemonChiffon",
       hex: "#FFFACD",
       r: 255,
       g: 250,
@@ -582,6 +638,7 @@ const CssNamedColor = {
       key: "LemonChiffon",
     },
     LightBlue: {
+      name: "LightBlue",
       hex: "#ADD8E6",
       r: 173,
       g: 216,
@@ -589,6 +646,7 @@ const CssNamedColor = {
       key: "LightBlue",
     },
     LightCoral: {
+      name: "LightCoral",
       hex: "#F08080",
       r: 240,
       g: 128,
@@ -596,6 +654,7 @@ const CssNamedColor = {
       key: "LightCoral",
     },
     LightCyan: {
+      name: "LightCyan",
       hex: "#E0FFFF",
       r: 224,
       g: 255,
@@ -603,6 +662,7 @@ const CssNamedColor = {
       key: "LightCyan",
     },
     LightGoldenrodYellow: {
+      name: "LightGoldenrodYellow",
       hex: "#FAFAD2",
       r: 250,
       g: 250,
@@ -610,7 +670,7 @@ const CssNamedColor = {
       key: "LightGoldenrodYellow",
     },
     LightGray: {
-      displayName: "LightGray",
+      name: "LightGray",
       hex: "#D3D3D3",
       r: 211,
       g: 211,
@@ -618,6 +678,7 @@ const CssNamedColor = {
       key: "LightGray",
     },
     LightGreen: {
+      name: "LightGreen",
       hex: "#90EE90",
       r: 144,
       g: 238,
@@ -625,6 +686,7 @@ const CssNamedColor = {
       key: "LightGreen",
     },
     LightPink: {
+      name: "LightPink",
       hex: "#FFB6C1",
       r: 255,
       g: 182,
@@ -632,6 +694,7 @@ const CssNamedColor = {
       key: "LightPink",
     },
     LightSalmon: {
+      name: "LightSalmon",
       hex: "#FFA07A",
       r: 255,
       g: 160,
@@ -639,6 +702,7 @@ const CssNamedColor = {
       key: "LightSalmon",
     },
     LightSeaGreen: {
+      name: "LightSeaGreen",
       hex: "#20B2AA",
       r: 32,
       g: 178,
@@ -646,6 +710,7 @@ const CssNamedColor = {
       key: "LightSeaGreen",
     },
     LightSkyBlue: {
+      name: "LightSkyBlue",
       hex: "#87CEFA",
       r: 135,
       g: 206,
@@ -653,7 +718,7 @@ const CssNamedColor = {
       key: "LightSkyBlue",
     },
     LightSlateGray: {
-      displayName: "LightSlateGray",
+      name: "LightSlateGray",
       hex: "#778899",
       r: 119,
       g: 136,
@@ -661,6 +726,7 @@ const CssNamedColor = {
       key: "LightSlateGray",
     },
     LightSteelBlue: {
+      name: "LightSteelBlue",
       hex: "#B0C4DE",
       r: 176,
       g: 196,
@@ -668,6 +734,7 @@ const CssNamedColor = {
       key: "LightSteelBlue",
     },
     LightYellow: {
+      name: "LightYellow",
       hex: "#FFFFE0",
       r: 255,
       g: 255,
@@ -675,6 +742,7 @@ const CssNamedColor = {
       key: "LightYellow",
     },
     Lime: {
+      name: "Lime",
       hex: "#00FF00",
       r: 0,
       g: 255,
@@ -682,6 +750,7 @@ const CssNamedColor = {
       key: "Lime",
     },
     LimeGreen: {
+      name: "LimeGreen",
       hex: "#32CD32",
       r: 50,
       g: 205,
@@ -689,6 +758,7 @@ const CssNamedColor = {
       key: "LimeGreen",
     },
     Linen: {
+      name: "Linen",
       hex: "#FAF0E6",
       r: 250,
       g: 240,
@@ -696,7 +766,7 @@ const CssNamedColor = {
       key: "Linen",
     },
     Magenta: {
-      displayName: "Magenta / Fuchsia",
+      name: "Magenta",
       hex: "#FF00FF",
       r: 255,
       g: 0,
@@ -704,6 +774,7 @@ const CssNamedColor = {
       key: "Magenta",
     },
     Maroon: {
+      name: "Maroon",
       hex: "#800000",
       r: 128,
       g: 0,
@@ -711,6 +782,7 @@ const CssNamedColor = {
       key: "Maroon",
     },
     MediumAquamarine: {
+      name: "MediumAquamarine",
       hex: "#66CDAA",
       r: 102,
       g: 205,
@@ -718,6 +790,7 @@ const CssNamedColor = {
       key: "MediumAquamarine",
     },
     MediumBlue: {
+      name: "MediumBlue",
       hex: "#0000CD",
       r: 0,
       g: 0,
@@ -725,6 +798,7 @@ const CssNamedColor = {
       key: "MediumBlue",
     },
     MediumOrchid: {
+      name: "MediumOrchid",
       hex: "#BA55D3",
       r: 186,
       g: 85,
@@ -732,6 +806,7 @@ const CssNamedColor = {
       key: "MediumOrchid",
     },
     MediumPurple: {
+      name: "MediumPurple",
       hex: "#9370DB",
       r: 147,
       g: 112,
@@ -739,6 +814,7 @@ const CssNamedColor = {
       key: "MediumPurple",
     },
     MediumSeaGreen: {
+      name: "MediumSeaGreen",
       hex: "#3CB371",
       r: 60,
       g: 179,
@@ -746,6 +822,7 @@ const CssNamedColor = {
       key: "MediumSeaGreen",
     },
     MediumSlateBlue: {
+      name: "MediumSlateBlue",
       hex: "#7B68EE",
       r: 123,
       g: 104,
@@ -753,6 +830,7 @@ const CssNamedColor = {
       key: "MediumSlateBlue",
     },
     MediumSpringGreen: {
+      name: "MediumSpringGreen",
       hex: "#00FA9A",
       r: 0,
       g: 250,
@@ -760,6 +838,7 @@ const CssNamedColor = {
       key: "MediumSpringGreen",
     },
     MediumTurquoise: {
+      name: "MediumTurquoise",
       hex: "#48D1CC",
       r: 72,
       g: 209,
@@ -767,6 +846,7 @@ const CssNamedColor = {
       key: "MediumTurquoise",
     },
     MediumVioletRed: {
+      name: "MediumVioletRed",
       hex: "#C71585",
       r: 199,
       g: 21,
@@ -774,6 +854,7 @@ const CssNamedColor = {
       key: "MediumVioletRed",
     },
     MidnightBlue: {
+      name: "MidnightBlue",
       hex: "#191970",
       r: 25,
       g: 25,
@@ -781,6 +862,7 @@ const CssNamedColor = {
       key: "MidnightBlue",
     },
     MintCream: {
+      name: "MintCream",
       hex: "#F5FFFA",
       r: 245,
       g: 255,
@@ -788,6 +870,7 @@ const CssNamedColor = {
       key: "MintCream",
     },
     MistyRose: {
+      name: "MistyRose",
       hex: "#FFE4E1",
       r: 255,
       g: 228,
@@ -795,6 +878,7 @@ const CssNamedColor = {
       key: "MistyRose",
     },
     Moccasin: {
+      name: "Moccasin",
       hex: "#FFE4B5",
       r: 255,
       g: 228,
@@ -802,6 +886,7 @@ const CssNamedColor = {
       key: "Moccasin",
     },
     NavajoWhite: {
+      name: "NavajoWhite",
       hex: "#FFDEAD",
       r: 255,
       g: 222,
@@ -809,6 +894,7 @@ const CssNamedColor = {
       key: "NavajoWhite",
     },
     Navy: {
+      name: "Navy",
       hex: "#000080",
       r: 0,
       g: 0,
@@ -816,6 +902,7 @@ const CssNamedColor = {
       key: "Navy",
     },
     OldLace: {
+      name: "OldLace",
       hex: "#FDF5E6",
       r: 253,
       g: 245,
@@ -823,6 +910,7 @@ const CssNamedColor = {
       key: "OldLace",
     },
     Olive: {
+      name: "Olive",
       hex: "#808000",
       r: 128,
       g: 128,
@@ -830,6 +918,7 @@ const CssNamedColor = {
       key: "Olive",
     },
     OliveDrab: {
+      name: "OliveDrab",
       hex: "#6B8E23",
       r: 107,
       g: 142,
@@ -837,6 +926,7 @@ const CssNamedColor = {
       key: "OliveDrab",
     },
     Orange: {
+      name: "Orange",
       hex: "#FFA500",
       r: 255,
       g: 165,
@@ -844,6 +934,7 @@ const CssNamedColor = {
       key: "Orange",
     },
     OrangeRed: {
+      name: "OrangeRed",
       hex: "#FF4500",
       r: 255,
       g: 69,
@@ -851,6 +942,7 @@ const CssNamedColor = {
       key: "OrangeRed",
     },
     Orchid: {
+      name: "Orchid",
       hex: "#DA70D6",
       r: 218,
       g: 112,
@@ -858,6 +950,7 @@ const CssNamedColor = {
       key: "Orchid",
     },
     PaleGoldenrod: {
+      name: "PaleGoldenrod",
       hex: "#EEE8AA",
       r: 238,
       g: 232,
@@ -865,6 +958,7 @@ const CssNamedColor = {
       key: "PaleGoldenrod",
     },
     PaleGreen: {
+      name: "PaleGreen",
       hex: "#98FB98",
       r: 152,
       g: 251,
@@ -872,6 +966,7 @@ const CssNamedColor = {
       key: "PaleGreen",
     },
     PaleTurquoise: {
+      name: "PaleTurquoise",
       hex: "#AFEEEE",
       r: 175,
       g: 238,
@@ -879,6 +974,7 @@ const CssNamedColor = {
       key: "PaleTurquoise",
     },
     PaleVioletRed: {
+      name: "PaleVioletRed",
       hex: "#DB7093",
       r: 219,
       g: 112,
@@ -886,6 +982,7 @@ const CssNamedColor = {
       key: "PaleVioletRed",
     },
     PapayaWhip: {
+      name: "PapayaWhip",
       hex: "#FFEFD5",
       r: 255,
       g: 239,
@@ -893,6 +990,7 @@ const CssNamedColor = {
       key: "PapayaWhip",
     },
     PeachPuff: {
+      name: "PeachPuff",
       hex: "#FFDAB9",
       r: 255,
       g: 218,
@@ -900,6 +998,7 @@ const CssNamedColor = {
       key: "PeachPuff",
     },
     Peru: {
+      name: "Peru",
       hex: "#CD853F",
       r: 205,
       g: 133,
@@ -907,6 +1006,7 @@ const CssNamedColor = {
       key: "Peru",
     },
     Pink: {
+      name: "Pink",
       hex: "#FFC0CB",
       r: 255,
       g: 192,
@@ -914,6 +1014,7 @@ const CssNamedColor = {
       key: "Pink",
     },
     Plum: {
+      name: "Plum",
       hex: "#DDA0DD",
       r: 221,
       g: 160,
@@ -921,6 +1022,7 @@ const CssNamedColor = {
       key: "Plum",
     },
     PowderBlue: {
+      name: "PowderBlue",
       hex: "#B0E0E6",
       r: 176,
       g: 224,
@@ -928,6 +1030,7 @@ const CssNamedColor = {
       key: "PowderBlue",
     },
     Purple: {
+      name: "Purple",
       hex: "#800080",
       r: 128,
       g: 0,
@@ -935,6 +1038,7 @@ const CssNamedColor = {
       key: "Purple",
     },
     RebeccaPurple: {
+      name: "RebeccaPurple",
       hex: "#663399",
       r: 102,
       g: 51,
@@ -942,6 +1046,7 @@ const CssNamedColor = {
       key: "RebeccaPurple",
     },
     Red: {
+      name: "Red",
       hex: "#FF0000",
       r: 255,
       g: 0,
@@ -949,6 +1054,7 @@ const CssNamedColor = {
       key: "Red",
     },
     RosyBrown: {
+      name: "RosyBrown",
       hex: "#BC8F8F",
       r: 188,
       g: 143,
@@ -956,6 +1062,7 @@ const CssNamedColor = {
       key: "RosyBrown",
     },
     RoyalBlue: {
+      name: "RoyalBlue",
       hex: "#4169E1",
       r: 65,
       g: 105,
@@ -963,6 +1070,7 @@ const CssNamedColor = {
       key: "RoyalBlue",
     },
     SaddleBrown: {
+      name: "SaddleBrown",
       hex: "#8B4513",
       r: 139,
       g: 69,
@@ -970,6 +1078,7 @@ const CssNamedColor = {
       key: "SaddleBrown",
     },
     Salmon: {
+      name: "Salmon",
       hex: "#FA8072",
       r: 250,
       g: 128,
@@ -977,6 +1086,7 @@ const CssNamedColor = {
       key: "Salmon",
     },
     SandyBrown: {
+      name: "SandyBrown",
       hex: "#F4A460",
       r: 244,
       g: 164,
@@ -984,6 +1094,7 @@ const CssNamedColor = {
       key: "SandyBrown",
     },
     SeaGreen: {
+      name: "SeaGreen",
       hex: "#2E8B57",
       r: 46,
       g: 139,
@@ -991,6 +1102,7 @@ const CssNamedColor = {
       key: "SeaGreen",
     },
     Seashell: {
+      name: "Seashell",
       hex: "#FFF5EE",
       r: 255,
       g: 245,
@@ -998,6 +1110,7 @@ const CssNamedColor = {
       key: "Seashell",
     },
     Sienna: {
+      name: "Sienna",
       hex: "#A0522D",
       r: 160,
       g: 82,
@@ -1005,6 +1118,7 @@ const CssNamedColor = {
       key: "Sienna",
     },
     Silver: {
+      name: "Silver",
       hex: "#C0C0C0",
       r: 192,
       g: 192,
@@ -1012,6 +1126,7 @@ const CssNamedColor = {
       key: "Silver",
     },
     SkyBlue: {
+      name: "SkyBlue",
       hex: "#87CEEB",
       r: 135,
       g: 206,
@@ -1019,6 +1134,7 @@ const CssNamedColor = {
       key: "SkyBlue",
     },
     SlateBlue: {
+      name: "SlateBlue",
       hex: "#6A5ACD",
       r: 106,
       g: 90,
@@ -1026,7 +1142,7 @@ const CssNamedColor = {
       key: "SlateBlue",
     },
     SlateGray: {
-      displayName: "SlateGray",
+      name: "SlateGray",
       hex: "#708090",
       r: 112,
       g: 128,
@@ -1034,6 +1150,7 @@ const CssNamedColor = {
       key: "SlateGray",
     },
     Snow: {
+      name: "Snow",
       hex: "#FFFAFA",
       r: 255,
       g: 250,
@@ -1041,6 +1158,7 @@ const CssNamedColor = {
       key: "Snow",
     },
     SpringGreen: {
+      name: "SpringGreen",
       hex: "#00FF7F",
       r: 0,
       g: 255,
@@ -1048,6 +1166,7 @@ const CssNamedColor = {
       key: "SpringGreen",
     },
     SteelBlue: {
+      name: "SteelBlue",
       hex: "#4682B4",
       r: 70,
       g: 130,
@@ -1055,6 +1174,7 @@ const CssNamedColor = {
       key: "SteelBlue",
     },
     Tan: {
+      name: "Tan",
       hex: "#D2B48C",
       r: 210,
       g: 180,
@@ -1062,6 +1182,7 @@ const CssNamedColor = {
       key: "Tan",
     },
     Teal: {
+      name: "Teal",
       hex: "#008080",
       r: 0,
       g: 128,
@@ -1069,6 +1190,7 @@ const CssNamedColor = {
       key: "Teal",
     },
     Thistle: {
+      name: "Thistle",
       hex: "#D8BFD8",
       r: 216,
       g: 191,
@@ -1076,6 +1198,7 @@ const CssNamedColor = {
       key: "Thistle",
     },
     Tomato: {
+      name: "Tomato",
       hex: "#FF6347",
       r: 255,
       g: 99,
@@ -1083,6 +1206,7 @@ const CssNamedColor = {
       key: "Tomato",
     },
     Turquoise: {
+      name: "Turquoise",
       hex: "#40E0D0",
       r: 64,
       g: 224,
@@ -1090,6 +1214,7 @@ const CssNamedColor = {
       key: "Turquoise",
     },
     Violet: {
+      name: "Violet",
       hex: "#EE82EE",
       r: 238,
       g: 130,
@@ -1097,6 +1222,7 @@ const CssNamedColor = {
       key: "Violet",
     },
     Wheat: {
+      name: "Wheat",
       hex: "#F5DEB3",
       r: 245,
       g: 222,
@@ -1104,6 +1230,7 @@ const CssNamedColor = {
       key: "Wheat",
     },
     White: {
+      name: "White",
       hex: "#FFFFFF",
       r: 255,
       g: 255,
@@ -1111,6 +1238,7 @@ const CssNamedColor = {
       key: "White",
     },
     WhiteSmoke: {
+      name: "WhiteSmoke",
       hex: "#F5F5F5",
       r: 245,
       g: 245,
@@ -1118,6 +1246,7 @@ const CssNamedColor = {
       key: "WhiteSmoke",
     },
     Yellow: {
+      name: "Yellow",
       hex: "#FFFF00",
       r: 255,
       g: 255,
@@ -1125,6 +1254,7 @@ const CssNamedColor = {
       key: "Yellow",
     },
     YellowGreen: {
+      name: "YellowGreen",
       hex: "#9ACD32",
       r: 154,
       g: 205,
@@ -1140,8 +1270,6 @@ CssNamedColor.values = () => Object.values(CssNamedColor.properties);
 
 R.forEach((colorKey) => {
   const color = CssNamedColor.properties[colorKey];
-  color.displayName =
-    color.displayName !== undefined ? color.displayName : colorKey;
   color.vector = Vector.create({ x: color.r, y: color.g, z: color.b });
   const myVector = Vector.multiply(color.vector, 1.0 / 256.0);
   color.magnitude = Vector.magnitude(myVector);
