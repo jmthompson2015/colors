@@ -1,4 +1,5 @@
 import ColorUtils from "./ColorUtilities.js";
+import WheelSector from "./WheelSector.js";
 import Vector from "./Vector.js";
 
 /*
@@ -311,7 +312,7 @@ const CssNamedColor = {
       key: "DarkGoldenrod",
     },
     DarkGray: {
-      displayName: "DarkGray / DarkGrey",
+      displayName: "DarkGray",
       hex: "#A9A9A9",
       r: 169,
       g: 169,
@@ -389,7 +390,7 @@ const CssNamedColor = {
       key: "DarkSlateBlue",
     },
     DarkSlateGray: {
-      displayName: "DarkSlateGray / DarkSlateGrey",
+      displayName: "DarkSlateGray",
       hex: "#2F4F4F",
       r: 47,
       g: 79,
@@ -425,7 +426,7 @@ const CssNamedColor = {
       key: "DeepSkyBlue",
     },
     DimGray: {
-      displayName: "DimGray / DimGrey",
+      displayName: "DimGray",
       hex: "#696969",
       r: 105,
       g: 105,
@@ -489,7 +490,7 @@ const CssNamedColor = {
       key: "Goldenrod",
     },
     Gray: {
-      displayName: "Gray / Grey",
+      displayName: "Gray",
       hex: "#808080",
       r: 128,
       g: 128,
@@ -609,7 +610,7 @@ const CssNamedColor = {
       key: "LightGoldenrodYellow",
     },
     LightGray: {
-      displayName: "LightGray / LightGrey",
+      displayName: "LightGray",
       hex: "#D3D3D3",
       r: 211,
       g: 211,
@@ -652,7 +653,7 @@ const CssNamedColor = {
       key: "LightSkyBlue",
     },
     LightSlateGray: {
-      displayName: "LightSlateGray / LightSlateGrey",
+      displayName: "LightSlateGray",
       hex: "#778899",
       r: 119,
       g: 136,
@@ -1025,7 +1026,7 @@ const CssNamedColor = {
       key: "SlateBlue",
     },
     SlateGray: {
-      displayName: "SlateGray / SlateGrey",
+      displayName: "SlateGray",
       hex: "#708090",
       r: 112,
       g: 128,
@@ -1148,6 +1149,7 @@ R.forEach((colorKey) => {
   color.h = hsl.h;
   color.s = hsl.s;
   color.l = hsl.l;
+  color.sector = WheelSector.sector(color);
 }, CssNamedColor.keys());
 
 CssNamedColor.color = (colorKey) => CssNamedColor.properties[colorKey];

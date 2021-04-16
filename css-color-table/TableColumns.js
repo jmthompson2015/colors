@@ -20,8 +20,14 @@ const TableColumns = [
   },
   {
     key: "displayName",
-    label: "Color",
+    label: "CSS Name",
     className: "tl",
+  },
+  {
+    key: "sector",
+    label: "Sector",
+    className: "tl",
+    valueFunction: (row) => (row.sector ? row.sector.name : undefined),
   },
   {
     key: "r",
