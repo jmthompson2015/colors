@@ -1,3 +1,4 @@
+import ColorUtils from "./ColorUtilities.js";
 import Vector from "./Vector.js";
 
 /*
@@ -1143,7 +1144,11 @@ R.forEach((colorKey) => {
   color.vector = Vector.create({ x: color.r, y: color.g, z: color.b });
   const myVector = Vector.multiply(color.vector, 1.0 / 256.0);
   color.magnitude = Vector.magnitude(myVector);
-}, CssNamedColor.keys(CssNamedColor));
+  const hsl = ColorUtils.rgbToHsl(color.r, color.g, color.b);
+  color.h = hsl.h;
+  color.s = hsl.s;
+  color.l = hsl.l;
+}, CssNamedColor.keys());
 
 CssNamedColor.color = (colorKey) => CssNamedColor.properties[colorKey];
 

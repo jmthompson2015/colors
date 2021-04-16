@@ -2,17 +2,9 @@
 
 import CssNamedColor from "../artifact/CssNamedColor.js";
 
-import ColorUtilities from "../artifact/ColorUtilities.js";
-
 import TableColumns from "./TableColumns.js";
 
-const mapFunction = (color) => {
-  const hsl = ColorUtilities.rgbToHsl(color.r, color.g, color.b);
-
-  return R.mergeRight(color, hsl);
-};
-const tableRows = R.map(mapFunction, CssNamedColor.values());
-
+const tableRows = CssNamedColor.values();
 const appName = "Css Color Table";
 const onFilterChange = (filteredTableRows) => {
   console.log(
