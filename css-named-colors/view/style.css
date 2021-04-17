@@ -1,4 +1,9 @@
-body {
+.frt-table td {
+  border: 1px solid Gray;
+}
+
+.frt-table th {
   background-color: Gray;
-  font-family: "San Francisco", "Helvetica Neue", Helvetica, sans-serif;
+  border: 1px solid White;
+  color: White;
 }

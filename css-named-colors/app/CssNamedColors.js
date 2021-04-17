@@ -5,21 +5,16 @@ import AxisSelect from "../view/AxisSelect.js";
 import ColorTable from "../view/ColorTable.js";
 
 let axisKey;
-const rowData = CssNamedColor.values();
+const tableRows = CssNamedColor.values();
 
 function createColorTable() {
   const element = React.createElement(ColorTable, {
     axis: RGBAxis.properties[axisKey],
-    rowData,
+    tableRows,
   });
 
   ReactDOM.render(
-    ReactDOMFactories.div(
-      {
-        className: "center tc",
-      },
-      element
-    ),
+    ReactDOMFactories.div({ className: "center tc" }, element),
     document.getElementById("colorPanel")
   );
 }

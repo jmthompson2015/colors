@@ -1,72 +1,32 @@
-import Vector from "../../artifact/Vector.js";
-
-import DataTable from "./DataTable.js";
 import TableColumns from "./TableColumns.js";
-
-const round2 = (value) => Math.round(value * 100.0) / 100.0;
-
-const round4 = (value) => Math.round(value * 10000.0) / 10000.0;
 
 class ColorTable extends React.Component {
   render() {
-    const { axis, rowData: myRowData } = this.props;
-    const axisVector = axis ? axis.vector : undefined;
+    const { axis, tableRows } = this.props;
 
-    const cellFunctions = {
-      swatch: (data) =>
-        ReactDOMFactories.div({
-          className: "w-100",
-          style: {
-            backgroundColor: data.key,
-            height: 32,
-            width: 64,
-          },
-        }),
-      decimal: (data) => `${data.r},${data.g},${data.b}`,
-      magnitude: (data) => round2(data.magnitude),
-      onAxis: (data) => {
-        let onAxis;
-        if (axisVector) {
-          const colorVector = Vector.unit(data.vector);
-          onAxis = round4(Vector.dot(colorVector, axisVector));
-        }
-        return onAxis;
-      },
-      offAxis: (data) => {
-        let offAxis;
-        if (axisVector) {
-          const colorVector = Vector.unit(data.vector);
-          const myVector = Vector.cross(colorVector, axisVector);
-          offAxis = round4(Vector.magnitude(myVector));
-        }
-        return offAxis;
-      },
-    };
+    const mapFunction = (row) => R.mergeRight(row, { axis });
+    const myRowData = R.map(mapFunction, tableRows);
+    const defaultSort = { column: "onAxis", direction: "desc" };
 
-    const defaultSort = {
-      column: "onAxis",
-      direction: "desc",
-    };
-
-    const table = React.createElement(DataTable, {
-      cellFunctions,
-      columns: TableColumns,
-      rowData: myRowData,
+    const frt = new FilteredReactTable({
+      tableColumns: TableColumns,
+      tableRows: myRowData,
       defaultSort,
+      appName: "CssNamedColor",
     });
 
-    return ReactDOMFactories.div({ className: "center tc" }, table);
+    return frt.tableElement();
   }
 }
 
 ColorTable.propTypes = {
-  rowData: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+  tableRows: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 
   axis: PropTypes.shape(),
 };
 
 ColorTable.defaultProps = {
-  axis: {},
+  axis: undefined,
 };
 
 export default ColorTable;

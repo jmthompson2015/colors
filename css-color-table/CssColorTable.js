@@ -17,14 +17,14 @@ const onShowColumnChange = (columnToChecked) => {
   );
 };
 const isVerbose = false;
-const frt = new FilteredReactTable(
-  TableColumns,
+const frt = new FilteredReactTable({
+  tableColumns: TableColumns,
   tableRows,
   appName,
   onFilterChange,
   onShowColumnChange,
-  isVerbose
-);
+  isVerbose,
+});
 
 ReactDOM.render(frt.filterPanel(), document.getElementById("filter"));
 ReactDOM.render(frt.showColumnsPanel(), document.getElementById("showColumns"));
